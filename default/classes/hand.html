@@ -1,0 +1,1088 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Hand | Leap Motion</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Leap Motion</a>
+				</div>
+				<div class="table-cell" id="tsd-filter">
+					<input type="checkbox" id="tsd-filter-inherited" checked />
+					<label for="tsd-filter-inherited">Inherited</label>
+					<input type="checkbox" id="tsd-filter-private" checked />
+					<label for="tsd-filter-private">Private</label>
+					<input type="checkbox" id="tsd-filter-externals" checked />
+					<label for="tsd-filter-externals">Externals</label>
+					<input type="checkbox" id="tsd-filter-only-exported" />
+					<label for="tsd-filter-only-exported">Only exported</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="hand.html">Hand</a>
+				</li>
+			</ul>
+			<h1>Class Hand</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="panel">
+		<div class="pannel-inner"></div>
+	</div>
+	<div class="row">
+		<div class="col-8">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The Hand class reports the physical characteristics of a detected hand.</p>
+					</div>
+					<p>Hand tracking data includes a palm position and velocity; vectors for
+						the palm normal and direction to the fingers; properties of a sphere fit
+					to the hand; and lists of the attached fingers and tools.</p>
+					<p>Note that Hand objects can be invalid, which means that they do not
+						contain valid tracking data and do not correspond to a physical entity.
+						Invalid Hand objects can be the result of asking for a Hand object using
+						an ID from an earlier frame when no Hand objects with that ID exist in
+						the current frame. A Hand object created from the Hand constructor is
+					also invalid. Test for validity with the <code>Hand.isValid()</code> function.</p>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>logotype</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Constructor methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#direction" class="tsd-kind-icon">direction</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#fingers" class="tsd-kind-icon">fingers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#frame" class="tsd-kind-icon">frame</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#palmnormal" class="tsd-kind-icon">palm<wbr>Normal</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#palmposition" class="tsd-kind-icon">palm<wbr>Position</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#palmvelocity" class="tsd-kind-icon">palm<wbr>Velocity</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#pointables" class="tsd-kind-icon">pointables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#rotation" class="tsd-kind-icon">rotation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#scalefactornumber" class="tsd-kind-icon">scale<wbr>Factor<wbr>Number</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#spherecenter" class="tsd-kind-icon">sphere<wbr>Center</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#sphereradius" class="tsd-kind-icon">sphere<wbr>Radius</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#stabilizedpalmposition" class="tsd-kind-icon">stabilized<wbr>Palm<wbr>Position</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#timevisible" class="tsd-kind-icon">time<wbr>Visible</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#tools" class="tsd-kind-icon">tools</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#translationvector" class="tsd-kind-icon">translation<wbr>Vector</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#finger" class="tsd-kind-icon">finger</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="hand.html#static-invalid" class="tsd-kind-icon">invalid</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#isequalto" class="tsd-kind-icon">is<wbr>Equal<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#pointable" class="tsd-kind-icon">pointable</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#rotationangle" class="tsd-kind-icon">rotation<wbr>Angle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#rotationaxis" class="tsd-kind-icon">rotation<wbr>Axis</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#rotationmatrix" class="tsd-kind-icon">rotation<wbr>Matrix</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#scalefactor" class="tsd-kind-icon">scale<wbr>Factor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#tool" class="tsd-kind-icon">tool</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="hand.html#translation" class="tsd-kind-icon">translation</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Constructor methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="constructor" class="anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">constructor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hand.html" class="tsd-signature-type">Hand</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Hand.ts:141</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Constructs a Hand object.</p>
+								</div>
+								<p>An uninitialized hand is considered invalid.
+								Get valid Hand objects from a Frame object.</p>
+							</div>
+							<h4>Returns 
+								<a href="hand.html" class="tsd-signature-type">Hand</a>
+							</h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="direction" class="anchor"></a>
+					<h3>direction</h3>
+					<div class="tsd-signature tsd-kind-icon">direction<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:31</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The direction from the palm position toward the fingers.</p>
+						</div>
+						<p>The direction is expressed as a unit vector pointing in the same
+						direction as the directed line from the palm position to the fingers.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="fingers" class="anchor"></a>
+					<h3>fingers</h3>
+					<div class="tsd-signature tsd-kind-icon">fingers<span class="tsd-signature-symbol">:</span> <a href="finger.html" class="tsd-signature-type">Finger</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:38</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The list of Finger objects detected in this frame that are attached
+							to this hand, given in arbitrary order.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>see</dt>
+							<dd><p>Finger</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="frame" class="anchor"></a>
+					<h3>frame</h3>
+					<div class="tsd-signature tsd-kind-icon">frame<span class="tsd-signature-symbol">:</span> <a href="frame.html" class="tsd-signature-type">Frame</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:44</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The Frame associated with this Hand.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>see</dt>
+							<dd><p>Frame</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="id" class="anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:57</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A unique ID assigned to this Hand object, whose value remains
+							the same across consecutive frames while the tracked hand remains visible.</p>
+						</div>
+						<p>If tracking is lost (for example, when a hand is occluded by another
+							hand or when it is withdrawn from or reaches the edge of the Leap field
+						of view), the Leap may assign a new ID when it detects the hand in a future frame.</p>
+						<p>Use the ID value with the <code>Frame.hand()</code> to find this Hand object
+						in future frames.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="palmnormal" class="anchor"></a>
+					<h3>palm<wbr>Normal</h3>
+					<div class="tsd-signature tsd-kind-icon">palm<wbr>Normal<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:62</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The normal vector to the palm.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="palmposition" class="anchor"></a>
+					<h3>palm<wbr>Position</h3>
+					<div class="tsd-signature tsd-kind-icon">palm<wbr>Position<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:67</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The center position of the palm in millimeters from the Leap origin.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="palmvelocity" class="anchor"></a>
+					<h3>palm<wbr>Velocity</h3>
+					<div class="tsd-signature tsd-kind-icon">palm<wbr>Velocity<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:85</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The rate of change of the palm position in millimeters/second.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="pointables" class="anchor"></a>
+					<h3>pointables</h3>
+					<div class="tsd-signature tsd-kind-icon">pointables<span class="tsd-signature-symbol">:</span> <a href="pointable.html" class="tsd-signature-type">Pointable</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:101</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The list of Pointable objects (fingers and tools) detected in this
+							frame that are associated with this hand, given in arbitrary order.</p>
+						</div>
+						<p>The list can be empty if no fingers or tools associated with this hand are detected.
+							Use the <code>Pointable.isFinger()</code> to determine whether or not an item in the
+							list represents a finger. Use the <code>Pointable.isTool()</code> to determine
+							whether or not an item in the list represents a tool. You can also get
+							only fingers using the <code>Hand.fingers()</code> or only tools using
+						the <code>Hand.tools()</code> function.</p>
+						<dl class="tsd-comment-tags">
+							<dt>see</dt>
+							<dd><p>Pointable</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="rotation" class="anchor"></a>
+					<h3>rotation</h3>
+					<div class="tsd-signature tsd-kind-icon">rotation<span class="tsd-signature-symbol">:</span> <a href="matrix.html" class="tsd-signature-type">Matrix</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:121</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Rotation matrix.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="scalefactornumber" class="anchor"></a>
+					<h3>scale<wbr>Factor<wbr>Number</h3>
+					<div class="tsd-signature tsd-kind-icon">scale<wbr>Factor<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:126</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Scale factor since last Frame.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="spherecenter" class="anchor"></a>
+					<h3>sphere<wbr>Center</h3>
+					<div class="tsd-signature tsd-kind-icon">sphere<wbr>Center<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:106</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The center of a sphere fit to the curvature of this hand.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="sphereradius" class="anchor"></a>
+					<h3>sphere<wbr>Radius</h3>
+					<div class="tsd-signature tsd-kind-icon">sphere<wbr>Radius<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:110</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The radius of a sphere fit to the curvature of this hand.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="stabilizedpalmposition" class="anchor"></a>
+					<h3>stabilized<wbr>Palm<wbr>Position</h3>
+					<div class="tsd-signature tsd-kind-icon">stabilized<wbr>Palm<wbr>Position<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:74</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The stabilized palm position of this Hand.</p>
+							<p>Smoothing and stabilization is performed in order to make this value more suitable for interaction with 2D content.</p>
+							<p>A modified palm position of this Hand object with some additional smoothing and stabilization applied.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="timevisible" class="anchor"></a>
+					<h3>time<wbr>Visible</h3>
+					<div class="tsd-signature tsd-kind-icon">time<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:80</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The duration of time this Hand has been visible to the Leap Motion Controller.</p>
+							<p>The duration (in seconds) that this Hand has been tracked.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="tools" class="anchor"></a>
+					<h3>tools</h3>
+					<div class="tsd-signature tsd-kind-icon">tools<span class="tsd-signature-symbol">:</span> <a href="tool.html" class="tsd-signature-type">Tool</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:116</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The list of Tool objects detected in this frame that are held by this hand, given in arbitrary order.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>see</dt>
+							<dd><p>Tool</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="translationvector" class="anchor"></a>
+					<h3>translation<wbr>Vector</h3>
+					<div class="tsd-signature tsd-kind-icon">translation<wbr>Vector<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Hand.ts:131</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Translation since last Frame.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="finger" class="anchor"></a>
+					<h3>finger</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">finger<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="finger.html" class="tsd-signature-type">Finger</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Hand.ts:196</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The Finger object with the specified ID attached to this hand.</p>
+								</div>
+								<p>Use the <code>Hand.finger()</code> to retrieve a Finger object attached
+									to this hand using an ID value obtained from a previous frame.
+									This always returns a Finger object, but if no finger
+								with the specified ID is present, an invalid Finger object is returned.</p>
+								<p>Note that ID values persist across frames, but only until tracking of
+									a particular object is lost. If tracking of a finger is lost and
+									subsequently regained, the new Finger object representing that
+								finger may have a different ID than that representing the finger in an earlier frame.</p>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>Finger</p>
+									</dd>
+								</dl>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The ID value of a Finger object from a previous frame.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="finger.html" class="tsd-signature-type">Finger</a>
+							</h4>
+							<p>The Finger object with the matching ID if one exists for
+							this hand in this frame; otherwise, an invalid Finger object is returned.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="static-invalid" class="anchor"></a>
+					<h3><span class="tsd-flag ts-flagstatic">static</span> invalid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">invalid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hand.html" class="tsd-signature-type">Hand</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Hand.ts:450</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an invalid Hand object.</p>
+								</div>
+								<p>You can use the instance returned by this in comparisons
+									testing whether a given Hand instance is valid or invalid.
+								(You can also use the <code>Hand.isValid()</code> function.)</p>
+							</div>
+							<h4>Returns 
+								<a href="hand.html" class="tsd-signature-type">Hand</a>
+							</h4>
+							<p>The invalid Hand instance.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="isequalto" class="anchor"></a>
+					<h3>is<wbr>Equal<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Equal<wbr>To<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="hand.html" class="tsd-signature-type">Hand</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Hand.ts:169</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compare Hand object equality/inequality.</p>
+								</div>
+								<p>Two Hand objects are equal if and only if both Hand objects
+									represent the exact same physical hand in the same frame
+								and both Hand objects are valid.</p>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>other: <a href="hand.html" class="tsd-signature-type">Hand</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The Hand object to compare with.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<span class="tsd-signature-type">boolean</span>
+							</h4>
+							<p>True; if equal. False otherwise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="isvalid" class="anchor"></a>
+					<h3>is<wbr>Valid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Hand.ts:150</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reports whether this is a valid Hand object.</p>
+								</div>
+							</div>
+							<h4>Returns 
+								<span class="tsd-signature-type">boolean</span>
+							</h4>
+							<p>True, if this Hand object contains valid tracking data.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="pointable" class="anchor"></a>
+					<h3>pointable</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">pointable<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pointable.html" class="tsd-signature-type">Pointable</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Hand.ts:269</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The Pointable object with the specified ID associated with this hand.</p>
+								</div>
+								<p>Use the <code>Hand.pointable()</code> to retrieve a Pointable object
+									associated with this hand using an ID value obtained from a previous frame.
+									This always returns a Pointable object, but if no finger or
+								tool with the specified ID is present, an invalid Pointable object is returned.</p>
+								<p>Note that ID values persist across frames, but only until tracking
+									of a particular object is lost. If tracking of a finger or tool is
+									lost and subsequently regained, the new Pointable object representing
+									that finger or tool may have a different ID than that representing
+								the finger or tool in an earlier frame.</p>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>Pointable</p>
+									</dd>
+								</dl>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="pointable.html" class="tsd-signature-type">Pointable</a>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="rotationangle" class="anchor"></a>
+					<h3>rotation<wbr>Angle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">rotation<wbr>Angle<span class="tsd-signature-symbol">(</span>sinceFrame<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a>, axis<span class="tsd-signature-symbol">?: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol"> =&nbsp;</span>null<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Hand.ts:336</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The angle of rotation around the rotation axis derived from the
+									overall rotational motion between the current frame and the specified frame.</p>
+								</div>
+								<p>The returned angle is expressed in radians measured clockwise around
+									the rotation axis (using the right-hand rule) between the
+								start and end frames. The value is always between 0 and pi radians (0 and 180 degrees).</p>
+								<p>The Leap derives frame rotation from the relative change in position
+								and orientation of all objects detected in the field of view.</p>
+								<p>If either this frame or sinceFrame is an invalid Frame object,
+								then the angle of rotation is zero.</p>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The starting frame for computing the relative rotation.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>axis?: <a href="vector3.html" class="tsd-signature-type">Vector3</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Optional. The axis to measure rotation around.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<span class="tsd-signature-type">number</span>
+							</h4>
+							<p>A positive value containing the heuristically determined rotational
+							change between the current frame and that specified in the sinceFrame parameter.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="rotationaxis" class="anchor"></a>
+					<h3>rotation<wbr>Axis</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">rotation<wbr>Axis<span class="tsd-signature-symbol">(</span>sinceFrame<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Hand.ts:304</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The axis of rotation derived from the change in orientation
+										of this hand, and any associated fingers and tools,
+									between the current frame and the specified frame.</p>
+								</div>
+								<p>The returned direction vector is normalized.</p>
+								<p>If a corresponding Hand object is not found in sinceFrame,
+									or if either this frame or sinceFrame are invalid Frame objects,
+								then this method returns a zero vector.</p>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>Vector3</p>
+									</dd>
+								</dl>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The starting frame for computing the relative rotation.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
+							</h4>
+							<p>A normalized direction Vector representing the heuristically
+								determined axis of rotational change of the hand between the current
+							frame and that specified in the sinceFrame parameter.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="rotationmatrix" class="anchor"></a>
+					<h3>rotation<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">rotation<wbr>Matrix<span class="tsd-signature-symbol">(</span>sinceFrame<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="matrix.html" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Hand.ts:373</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The transform matrix expressing the rotation derived from
+										the change in orientation of this hand, and any associated
+									fingers and tools, between the current frame and the specified frame.</p>
+								</div>
+								<p>If a corresponding Hand object is not found in sinceFrame,
+									or if either this frame or sinceFrame are invalid Frame objects,
+								then this method returns an identity matrix.</p>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>Matrix</p>
+									</dd>
+									<dt>see</dt>
+									<dd><p>Frame</p>
+									</dd>
+								</dl>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="matrix.html" class="tsd-signature-type">Matrix</a>
+							</h4>
+							<p>A transformation Matrix representing the heuristically
+								determined rotational change of the hand between the current
+							frame and that specified in the sinceFrame parameter.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="scalefactor" class="anchor"></a>
+					<h3>scale<wbr>Factor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">scale<wbr>Factor<span class="tsd-signature-symbol">(</span>sinceFrame<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Hand.ts:407</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The scale factor derived from this hand&#39;s motion between
+									the current frame and the specified frame.</p>
+								</div>
+								<p>The scale factor is always positive. A value of 1.0 indicates no
+									scaling took place. Values between 0.0 and 1.0 indicate contraction
+								and values greater than 1.0 indicate expansion.</p>
+								<p>The Leap derives scaling from the relative inward or outward motion
+									of a hand and its associated fingers and tools (independent of
+								translation and rotation).</p>
+								<p>If a corresponding Hand object is not found in sinceFrame,
+									or if either this frame or sinceFrame are invalid Frame objects,
+								then this method returns 1.0.</p>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The starting frame for computing the relative scaling.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<span class="tsd-signature-type">number</span>
+							</h4>
+							<p>A positive value representing the heuristically determined
+								scaling change ratio between the current frame and that specified
+							in the sinceFrame parameter.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="tool" class="anchor"></a>
+					<h3>tool</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">tool<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="tool.html" class="tsd-signature-type">Tool</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Hand.ts:233</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The Tool object with the specified ID held by this hand.</p>
+								</div>
+								<p>Use the <code>Hand.tool()</code> to retrieve a Tool object held
+									by this hand using an ID value obtained from a previous frame.
+									This always returns a Tool object, but if no tool
+								with the specified ID is present, an invalid Tool object is returned.</p>
+								<p>Note that ID values persist across frames, but only until
+									tracking of a particular object is lost. If tracking of a tool
+									is lost and subsequently regained, the new Tool object
+									representing that tool may have a different ID than that
+								representing the tool in an earlier frame.</p>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>Tool</p>
+									</dd>
+								</dl>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The ID value of a Tool object from a previous frame.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="tool.html" class="tsd-signature-type">Tool</a>
+							</h4>
+							<p>The Tool object with the matching ID if one exists for
+							this hand in this frame; otherwise, an invalid Tool object is returned.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="translation" class="anchor"></a>
+					<h3>translation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">translation<span class="tsd-signature-symbol">(</span>sinceFrame<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Hand.ts:428</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The change of position of this hand between the current frame and the specified frame.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>Vector3</p>
+									</dd>
+								</dl>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The starting frame for computing the translation.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
+							</h4>
+							<p>A Vector representing the heuristically determined change
+								in hand position between the current frame and that specified
+							in the sinceFrame parameter.</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-is-not-exported">
+						<a href="../enums/state.html" class="tsd-kind-icon">State</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-is-not-exported">
+						<a href="../enums/type.html" class="tsd-kind-icon">Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-is-not-exported">
+						<a href="../enums/zone.html" class="tsd-kind-icon">Zone</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="circlegesture.html" class="tsd-kind-icon">Circle<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="controller.html" class="tsd-kind-icon">Controller</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="defaultlistener.html" class="tsd-kind-icon">Default<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="eventdispatcher.html" class="tsd-kind-icon">Event<wbr>Dispatcher</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="finger.html" class="tsd-kind-icon">Finger</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="frame.html" class="tsd-kind-icon">Frame</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="gesture.html" class="tsd-kind-icon">Gesture</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-is-not-exported">
+						<a href="hand.html" class="tsd-kind-icon">Hand</a>
+						<ul>
+							<li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#direction" class="tsd-kind-icon">direction</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#fingers" class="tsd-kind-icon">fingers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#frame" class="tsd-kind-icon">frame</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#palmnormal" class="tsd-kind-icon">palm<wbr>Normal</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#palmposition" class="tsd-kind-icon">palm<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#palmvelocity" class="tsd-kind-icon">palm<wbr>Velocity</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#pointables" class="tsd-kind-icon">pointables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#rotation" class="tsd-kind-icon">rotation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#scalefactornumber" class="tsd-kind-icon">scale<wbr>Factor<wbr>Number</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#spherecenter" class="tsd-kind-icon">sphere<wbr>Center</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#sphereradius" class="tsd-kind-icon">sphere<wbr>Radius</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#stabilizedpalmposition" class="tsd-kind-icon">stabilized<wbr>Palm<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#timevisible" class="tsd-kind-icon">time<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#tools" class="tsd-kind-icon">tools</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#translationvector" class="tsd-kind-icon">translation<wbr>Vector</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#finger" class="tsd-kind-icon">finger</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="hand.html#static-invalid" class="tsd-kind-icon">invalid</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#isequalto" class="tsd-kind-icon">is<wbr>Equal<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#pointable" class="tsd-kind-icon">pointable</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#rotationangle" class="tsd-kind-icon">rotation<wbr>Angle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#rotationaxis" class="tsd-kind-icon">rotation<wbr>Axis</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#rotationmatrix" class="tsd-kind-icon">rotation<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#scalefactor" class="tsd-kind-icon">scale<wbr>Factor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#tool" class="tsd-kind-icon">tool</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="hand.html#translation" class="tsd-kind-icon">translation</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="interactionbox.html" class="tsd-kind-icon">Interaction<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="keytapgesture.html" class="tsd-kind-icon">Key<wbr>Tap<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="leapevent.html" class="tsd-kind-icon">Leap<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="leaputil.html" class="tsd-kind-icon">Leap<wbr>Util</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="matrix.html" class="tsd-kind-icon">Matrix</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="pointable.html" class="tsd-kind-icon">Pointable</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="screentapgesture.html" class="tsd-kind-icon">Screen<wbr>Tap<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="swipegesture.html" class="tsd-kind-icon">Swipe<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="tool.html" class="tsd-kind-icon">Tool</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="vector3.html" class="tsd-kind-icon">Vector3</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

@@ -1,0 +1,846 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Controller | Leap Motion</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Leap Motion</a>
+				</div>
+				<div class="table-cell" id="tsd-filter">
+					<input type="checkbox" id="tsd-filter-inherited" checked />
+					<label for="tsd-filter-inherited">Inherited</label>
+					<input type="checkbox" id="tsd-filter-private" checked />
+					<label for="tsd-filter-private">Private</label>
+					<input type="checkbox" id="tsd-filter-externals" checked />
+					<label for="tsd-filter-externals">Externals</label>
+					<input type="checkbox" id="tsd-filter-only-exported" />
+					<label for="tsd-filter-only-exported">Only exported</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="controller.html">Controller</a>
+				</li>
+			</ul>
+			<h1>Class Controller</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="panel">
+		<div class="pannel-inner"></div>
+	</div>
+	<div class="row">
+		<div class="col-8">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The Controller class is your main interface to the Leap Motion Controller.</p>
+					</div>
+					<p>Create an instance of this Controller class to access frames of tracking
+						data and configuration information. Frame data can be polled at any time using
+						the <code>Controller::frame()</code> . Call <code>frame()</code> or <code>frame(0)</code>
+						to get the most recent frame. Set the history parameter to a positive integer
+					to access previous frames. A controller stores up to 60 frames in its frame history.</p>
+					<p>Polling is an appropriate strategy for applications which already have an
+						intrinsic update loop, such as a game. You can also implement the Leap::Listener
+						interface to handle events as they occur. The Leap dispatches events to the listener
+						upon initialization and exiting, on connection changes, and when a new frame
+						of tracking data is available. When these events occur, the controller object
+					invokes the appropriate callback defined in the Listener interface.</p>
+					<p>To access frames of tracking data as they become available:</p>
+					<ul>
+						<li>Implement the Listener interface and override the <code>Listener::onFrame()</code> .</li>
+						<li>In your <code>Listener::onFrame()</code> , call the <code>Controller::frame()</code> to access the newest frame of tracking data.</li>
+						<li>To start receiving frames, create a Controller object and add event listeners to the <code>Controller::addEventListener()</code> .</li>
+					</ul>
+					<p>When an instance of a Controller object has been initialized,
+						it calls the <code>Listener::onInit()</code> when the listener is ready for use.
+						When a connection is established between the controller and the Leap,
+						the controller calls the <code>Listener::onConnect()</code> . At this point,
+						your application will start receiving frames of data. The controller calls
+						the <code>Listener::onFrame()</code> each time a new frame is available.
+						If the controller loses its connection with the Leap software or
+						device for any reason, it calls the <code>Listener::onDisconnect()</code> .
+						If the listener is removed from the controller or the controller is destroyed,
+						it calls the <code>Listener::onExit()</code> . At that point, unless the listener
+					is added to another controller again, it will no longer receive frames of tracking data.</p>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>logotype</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="eventdispatcher.html" class="tsd-signature-type">EventDispatcher</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">Controller</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Constructor methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="controller.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="controller.html#_isconnected" class="tsd-kind-icon">_is<wbr>Connected</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="controller.html#_isgesturesenabled" class="tsd-kind-icon">_is<wbr>Gestures<wbr>Enabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="controller.html#connection" class="tsd-kind-icon">connection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="controller.html#framehistory" class="tsd-kind-icon">frame<wbr>History</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="controller.html#latestframe" class="tsd-kind-icon">latest<wbr>Frame</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="controller.html#listener" class="tsd-kind-icon">listener</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="controller.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="controller.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="controller.html#enablegesture" class="tsd-kind-icon">enable<wbr>Gesture</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="controller.html#frame" class="tsd-kind-icon">frame</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static tsd-is-not-exported"><a href="controller.html#static-gethandbyid" class="tsd-kind-icon">get<wbr>Hand<wbr>ByID</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static tsd-is-not-exported"><a href="controller.html#static-getpointablebyid" class="tsd-kind-icon">get<wbr>Pointable<wbr>ByID</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="controller.html#haseventlistener" class="tsd-kind-icon">has<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="controller.html#isconnected" class="tsd-kind-icon">is<wbr>Connected</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="controller.html#isgestureenabled" class="tsd-kind-icon">is<wbr>Gesture<wbr>Enabled</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="controller.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="controller.html#setlistener" class="tsd-kind-icon">set<wbr>Listener</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Constructor methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<a name="constructor" class="anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">constructor<span class="tsd-signature-symbol">(</span>host<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;</span>null<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="controller.html" class="tsd-signature-type">Controller</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<p>Overwrites 
+									<a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#constructor">constructor</a>
+								</p>
+								<ul>
+									<li>Defined in Controller.ts:89</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Constructs a Controller object.</p>
+								</div>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>host?: <span class="tsd-signature-type">string</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>IP or hostname of the computer running the Leap software.
+											(currently only supported for socket connections).</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="controller.html" class="tsd-signature-type">Controller</a>
+							</h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="_isconnected" class="anchor"></a>
+					<h3>_is<wbr>Connected</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Connected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Controller.ts:75</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>private</dt>
+							<dd><p>Reports whether this Controller is connected to the Leap Motion Controller.</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="_isgesturesenabled" class="anchor"></a>
+					<h3>_is<wbr>Gestures<wbr>Enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Gestures<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Controller.ts:81</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>private</dt>
+							<dd><p>Reports whether gestures is enabled.</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="connection" class="anchor"></a>
+					<h3>connection</h3>
+					<div class="tsd-signature tsd-kind-icon">connection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WebSocket</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Controller.ts:69</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Socket connection.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="framehistory" class="anchor"></a>
+					<h3>frame<wbr>History</h3>
+					<div class="tsd-signature tsd-kind-icon">frame<wbr>History<span class="tsd-signature-symbol">:</span> <a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Controller.ts:59</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>private</dt>
+							<dd><p>History of frame of tracking data from the Leap.</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="latestframe" class="anchor"></a>
+					<h3><span class="tsd-flag ts-flagprivate">private</span> latest<wbr>Frame</h3>
+					<div class="tsd-signature tsd-kind-icon">latest<wbr>Frame<span class="tsd-signature-symbol">:</span> <a href="frame.html" class="tsd-signature-type">Frame</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Controller.ts:64</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Most recent received Frame.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="listener" class="anchor"></a>
+					<h3><span class="tsd-flag ts-flagprivate">private</span> listener</h3>
+					<div class="tsd-signature tsd-kind-icon">listener<span class="tsd-signature-symbol">:</span> <a href="../interfaces/listener.html" class="tsd-signature-type">Listener</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Controller.ts:53</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>private</dt>
+							<dd><p>The Listener subclass instance.</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="addeventlistener" class="anchor"></a>
+					<h3>add<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>typeStr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listenerFunction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<p>Inherited from 
+									<a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#addeventlistener">addEventListener</a>
+								</p>
+								<ul>
+									<li>Defined in util/EventDispatcher.ts:28</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>typeStr: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+								<li>
+									<h5>listenerFunction: <span class="tsd-signature-type">Function</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="dispatchevent" class="anchor"></a>
+					<h3>dispatch<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">dispatch<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="leapevent.html" class="tsd-signature-type">LeapEvent</a><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<p>Inherited from 
+									<a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#dispatchevent">dispatchEvent</a>
+								</p>
+								<ul>
+									<li>Defined in util/EventDispatcher.ts:45</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>event: <a href="leapevent.html" class="tsd-signature-type">LeapEvent</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="enablegesture" class="anchor"></a>
+					<h3>enable<wbr>Gesture</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">enable<wbr>Gesture<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/type.html" class="tsd-signature-type">Type</a>, enable<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;</span>true<span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Controller.ts:477</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Enables or disables reporting of a specified gesture type.</p>
+								</div>
+								<p>By default, all gesture types are disabled. When disabled, gestures of
+									the disabled type are never reported and will not appear in the frame
+								gesture list.</p>
+								<p>As a performance optimization, only enable recognition for the types
+								of movements that you use in your application.</p>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>type: <a href="../enums/type.html" class="tsd-signature-type">Type</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The type of gesture to enable or disable. Must be a member of the Gesture::Type enumeration.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>enable?: <span class="tsd-signature-type">boolean</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>True, to enable the specified gesture type; False, to disable.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="frame" class="anchor"></a>
+					<h3>frame</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">frame<span class="tsd-signature-symbol">(</span>history<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;</span>0<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Controller.ts:440</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a frame of tracking data from the Leap.</p>
+								</div>
+								<p>Use the optional history parameter to specify which frame to retrieve.
+									Call <code>frame()</code> or <code>frame(0)</code> to access the most recent frame;
+									call <code>frame(1)</code> to access the previous frame, and so on. If you use a history value
+									greater than the number of stored frames, then the controller returns
+								an invalid frame.</p>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>history?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The age of the frame to return, counting backwards from
+											the most recent frame (0) into the past and up to the maximum age (59).</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="frame.html" class="tsd-signature-type">Frame</a>
+							</h4>
+							<p>The specified frame; or, if no history parameter is specified,
+								the newest frame. If a frame is not available at the specified
+							history position, an invalid Frame is returned.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static tsd-is-not-exported">
+					<a name="static-gethandbyid" class="anchor"></a>
+					<h3><span class="tsd-flag ts-flagprivate">private</span> <span class="tsd-flag ts-flagstatic">static</span> get<wbr>Hand<wbr>ByID</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Hand<wbr>ByID<span class="tsd-signature-symbol">(</span>frame<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hand.html" class="tsd-signature-type">Hand</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Controller.ts:383</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finds a Hand object by ID.</p>
+								</div>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>frame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The Frame object in which the Hand contains</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The ID of the Hand object</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="hand.html" class="tsd-signature-type">Hand</a>
+							</h4>
+							<p>The Hand object if found, otherwise null</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static tsd-is-not-exported">
+					<a name="static-getpointablebyid" class="anchor"></a>
+					<h3><span class="tsd-flag ts-flagprivate">private</span> <span class="tsd-flag ts-flagstatic">static</span> get<wbr>Pointable<wbr>ByID</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Pointable<wbr>ByID<span class="tsd-signature-symbol">(</span>frame<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pointable.html" class="tsd-signature-type">Pointable</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Controller.ts:407</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finds a Pointable object by ID.</p>
+								</div>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>frame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The Frame object in which the Pointable contains</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The ID of the Pointable object</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="pointable.html" class="tsd-signature-type">Pointable</a>
+							</h4>
+							<p>The Pointable object if found, otherwise null</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="haseventlistener" class="anchor"></a>
+					<h3>has<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<p>Inherited from 
+									<a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#haseventlistener">hasEventListener</a>
+								</p>
+								<ul>
+									<li>Defined in util/EventDispatcher.ts:13</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">Function</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<span class="tsd-signature-type">boolean</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="isconnected" class="anchor"></a>
+					<h3>is<wbr>Connected</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Connected<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Controller.ts:522</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reports whether this Controller is connected to the Leap Motion Controller.</p>
+								</div>
+								<p>When you first create a Controller object, <code>isConnected()</code> returns false.
+									After the controller finishes initializing and connects to
+								the Leap, <code>isConnected()</code> will return true.</p>
+								<p>You can either handle the onConnect event using a event listener
+									or poll the <code>isConnected()</code> if you need to wait for your
+									application to be connected to the Leap before performing
+								some other operation.</p>
+							</div>
+							<h4>Returns 
+								<span class="tsd-signature-type">boolean</span>
+							</h4>
+							<p>True, if connected; false otherwise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="isgestureenabled" class="anchor"></a>
+					<h3>is<wbr>Gesture<wbr>Enabled</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Gesture<wbr>Enabled<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/type.html" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Controller.ts:502</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reports whether the specified gesture type is enabled.</p>
+								</div>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>type: <a href="../enums/type.html" class="tsd-signature-type">Type</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The Gesture.TYPE parameter.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<span class="tsd-signature-type">boolean</span>
+							</h4>
+							<p>True, if the specified type is enabled; false, otherwise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="removeeventlistener" class="anchor"></a>
+					<h3>remove<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>typeStr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listenerFunction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<p>Inherited from 
+									<a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#removeeventlistener">removeEventListener</a>
+								</p>
+								<ul>
+									<li>Defined in util/EventDispatcher.ts:36</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>typeStr: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+								<li>
+									<h5>listenerFunction: <span class="tsd-signature-type">Function</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="setlistener" class="anchor"></a>
+					<h3>set<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Listener<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/listener.html" class="tsd-signature-type">Listener</a><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Controller.ts:458</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Update the object that receives direct updates from the Leap Motion Controller.</p>
+								</div>
+								<p>The default listener will make the controller dispatch flash events.
+									You can override this behaviour, by implementing the IListener interface
+									in your own classes, and use this method to set the listener to your
+								own implementation.</p>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>listener: <a href="../interfaces/listener.html" class="tsd-signature-type">Listener</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-is-not-exported">
+						<a href="../enums/state.html" class="tsd-kind-icon">State</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-is-not-exported">
+						<a href="../enums/type.html" class="tsd-kind-icon">Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-is-not-exported">
+						<a href="../enums/zone.html" class="tsd-kind-icon">Zone</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="circlegesture.html" class="tsd-kind-icon">Circle<wbr>Gesture</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-is-not-exported">
+						<a href="controller.html" class="tsd-kind-icon">Controller</a>
+						<ul>
+							<li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+								<a href="controller.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="controller.html#_isconnected" class="tsd-kind-icon">_is<wbr>Connected</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="controller.html#_isgesturesenabled" class="tsd-kind-icon">_is<wbr>Gestures<wbr>Enabled</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="controller.html#connection" class="tsd-kind-icon">connection</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="controller.html#framehistory" class="tsd-kind-icon">frame<wbr>History</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="controller.html#latestframe" class="tsd-kind-icon">latest<wbr>Frame</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="controller.html#listener" class="tsd-kind-icon">listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="controller.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="controller.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="controller.html#enablegesture" class="tsd-kind-icon">enable<wbr>Gesture</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="controller.html#frame" class="tsd-kind-icon">frame</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static tsd-is-not-exported">
+								<a href="controller.html#static-gethandbyid" class="tsd-kind-icon">get<wbr>Hand<wbr>ByID</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static tsd-is-not-exported">
+								<a href="controller.html#static-getpointablebyid" class="tsd-kind-icon">get<wbr>Pointable<wbr>ByID</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="controller.html#haseventlistener" class="tsd-kind-icon">has<wbr>Event<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="controller.html#isconnected" class="tsd-kind-icon">is<wbr>Connected</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="controller.html#isgestureenabled" class="tsd-kind-icon">is<wbr>Gesture<wbr>Enabled</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="controller.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="controller.html#setlistener" class="tsd-kind-icon">set<wbr>Listener</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="defaultlistener.html" class="tsd-kind-icon">Default<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="eventdispatcher.html" class="tsd-kind-icon">Event<wbr>Dispatcher</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="finger.html" class="tsd-kind-icon">Finger</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="frame.html" class="tsd-kind-icon">Frame</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="gesture.html" class="tsd-kind-icon">Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="hand.html" class="tsd-kind-icon">Hand</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="interactionbox.html" class="tsd-kind-icon">Interaction<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="keytapgesture.html" class="tsd-kind-icon">Key<wbr>Tap<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="leapevent.html" class="tsd-kind-icon">Leap<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="leaputil.html" class="tsd-kind-icon">Leap<wbr>Util</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="matrix.html" class="tsd-kind-icon">Matrix</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="pointable.html" class="tsd-kind-icon">Pointable</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="screentapgesture.html" class="tsd-kind-icon">Screen<wbr>Tap<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="swipegesture.html" class="tsd-kind-icon">Swipe<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="tool.html" class="tsd-kind-icon">Tool</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="vector3.html" class="tsd-kind-icon">Vector3</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

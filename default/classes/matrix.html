@@ -1,0 +1,661 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Matrix | Leap Motion</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Leap Motion</a>
+				</div>
+				<div class="table-cell" id="tsd-filter">
+					<input type="checkbox" id="tsd-filter-inherited" checked />
+					<label for="tsd-filter-inherited">Inherited</label>
+					<input type="checkbox" id="tsd-filter-private" checked />
+					<label for="tsd-filter-private">Private</label>
+					<input type="checkbox" id="tsd-filter-externals" checked />
+					<label for="tsd-filter-externals">Externals</label>
+					<input type="checkbox" id="tsd-filter-only-exported" />
+					<label for="tsd-filter-only-exported">Only exported</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="matrix.html">Matrix</a>
+				</li>
+			</ul>
+			<h1>Class Matrix</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="panel">
+		<div class="pannel-inner"></div>
+	</div>
+	<div class="row">
+		<div class="col-8">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The Matrix struct represents a transformation matrix.</p>
+					</div>
+					<p>To use this struct to transform a Vector, construct a matrix containing the
+						desired transformation and then use the <code>Matrix.transformPoint()</code> or
+					<code>Matrix.transformDirection()</code> functions to apply the transform.</p>
+					<p>Transforms can be combined by multiplying two or more transform matrices
+					using the <code>multiply()</code> function.</p>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>logotype</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Constructor methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported"><a href="matrix.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="matrix.html#origin" class="tsd-kind-icon">origin</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="matrix.html#xbasis" class="tsd-kind-icon">x<wbr>Basis</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="matrix.html#ybasis" class="tsd-kind-icon">y<wbr>Basis</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="matrix.html#zbasis" class="tsd-kind-icon">z<wbr>Basis</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="matrix.html#static-identity" class="tsd-kind-icon">identity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="matrix.html#isequalto" class="tsd-kind-icon">is<wbr>Equal<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="matrix.html#multiply" class="tsd-kind-icon">multiply</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="matrix.html#multiplyassign" class="tsd-kind-icon">multiply<wbr>Assign</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="matrix.html#rigidinverse" class="tsd-kind-icon">rigid<wbr>Inverse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="matrix.html#setrotation" class="tsd-kind-icon">set<wbr>Rotation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="matrix.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="matrix.html#transformdirection" class="tsd-kind-icon">transform<wbr>Direction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="matrix.html#transformpoint" class="tsd-kind-icon">transform<wbr>Point</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Constructor methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="constructor" class="anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">constructor<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a>, y<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a>, z<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a>, _origin<span class="tsd-signature-symbol">?: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol"> =&nbsp;</span>null<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="matrix.html" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Matrix.ts:45</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Constructs a transformation matrix from the specified basis vectors.</p>
+								</div>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>x: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>A Vector specifying rotation and scale factors for the x-axis.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>y: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>A Vector specifying rotation and scale factors for the y-axis.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>z: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>A Vector specifying rotation and scale factors for the z-axis.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>_origin?: <a href="vector3.html" class="tsd-signature-type">Vector3</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>A Vector specifying translation factors on all three axes.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="matrix.html" class="tsd-signature-type">Matrix</a>
+							</h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="origin" class="anchor"></a>
+					<h3>origin</h3>
+					<div class="tsd-signature tsd-kind-icon">origin<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Matrix.ts:20</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The translation factors for all three axes.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="xbasis" class="anchor"></a>
+					<h3>x<wbr>Basis</h3>
+					<div class="tsd-signature tsd-kind-icon">x<wbr>Basis<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Matrix.ts:25</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The rotation and scale factors for the x-axis.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="ybasis" class="anchor"></a>
+					<h3>y<wbr>Basis</h3>
+					<div class="tsd-signature tsd-kind-icon">y<wbr>Basis<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Matrix.ts:30</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The rotation and scale factors for the y-axis.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="zbasis" class="anchor"></a>
+					<h3>z<wbr>Basis</h3>
+					<div class="tsd-signature tsd-kind-icon">z<wbr>Basis<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in Matrix.ts:35</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The rotation and scale factors for the z-axis.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="static-identity" class="anchor"></a>
+					<h3><span class="tsd-flag ts-flagstatic">static</span> identity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">identity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="matrix.html" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Matrix.ts:178</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the identity matrix specifying no translation, rotation, and scale.</p>
+								</div>
+							</div>
+							<h4>Returns 
+								<a href="matrix.html" class="tsd-signature-type">Matrix</a>
+							</h4>
+							<p>The identity matrix.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="isequalto" class="anchor"></a>
+					<h3>is<wbr>Equal<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Equal<wbr>To<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="matrix.html" class="tsd-signature-type">Matrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Matrix.ts:156</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compare Matrix equality/inequality component-wise.</p>
+								</div>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>other: <a href="matrix.html" class="tsd-signature-type">Matrix</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The Matrix to compare with.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<span class="tsd-signature-type">boolean</span>
+							</h4>
+							<p>True; if equal, False otherwise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="multiply" class="anchor"></a>
+					<h3>multiply</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">multiply<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="matrix.html" class="tsd-signature-type">Matrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="matrix.html" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Matrix.ts:122</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Multiply transform matrices.</p>
+								</div>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>other: <a href="matrix.html" class="tsd-signature-type">Matrix</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>A Matrix to multiply on the right hand side.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="matrix.html" class="tsd-signature-type">Matrix</a>
+							</h4>
+							<p>A new Matrix representing the transformation equivalent to applying the other transformation followed by this transformation.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="multiplyassign" class="anchor"></a>
+					<h3>multiply<wbr>Assign</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">multiply<wbr>Assign<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="matrix.html" class="tsd-signature-type">Matrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="matrix.html" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Matrix.ts:141</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Multiply transform matrices and assign the product.</p>
+								</div>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>other: <a href="matrix.html" class="tsd-signature-type">Matrix</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>A Matrix to multiply on the right hand side.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="matrix.html" class="tsd-signature-type">Matrix</a>
+							</h4>
+							<p>This Matrix representing the transformation equivalent to applying the other transformation followed by this transformation.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="rigidinverse" class="anchor"></a>
+					<h3>rigid<wbr>Inverse</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">rigid<wbr>Inverse<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="matrix.html" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Matrix.ts:108</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a matrix inverse if the matrix consists entirely of rigid transformations (translations and rotations).</p>
+								</div>
+							</div>
+							<h4>Returns 
+								<a href="matrix.html" class="tsd-signature-type">Matrix</a>
+							</h4>
+							<p>The rigid inverse of the matrix.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="setrotation" class="anchor"></a>
+					<h3>set<wbr>Rotation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Rotation<span class="tsd-signature-symbol">(</span>_axis<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a>, angleRadians<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Matrix.ts:64</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets this transformation matrix to represent a rotation around the specified vector.
+										This erases any previous rotation and scale transforms applied to this matrix,
+									but does not affect translation.</p>
+								</div>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>_axis: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>A Vector specifying the axis of rotation.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>angleRadians: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The amount of rotation in radians.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="tostring" class="anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Matrix.ts:192</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Write the matrix to a string in a human readable format.</p>
+								</div>
+							</div>
+							<h4>Returns 
+								<span class="tsd-signature-type">string</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="transformdirection" class="anchor"></a>
+					<h3>transform<wbr>Direction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">transform<wbr>Direction<span class="tsd-signature-symbol">(</span>inVector<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Matrix.ts:95</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Transforms a vector with this matrix by transforming its rotation and scale only.</p>
+								</div>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>inVector: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The Vector to transform.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
+							</h4>
+							<p>A new Vector representing the transformed original.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="transformpoint" class="anchor"></a>
+					<h3>transform<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">transform<wbr>Point<span class="tsd-signature-symbol">(</span>inVector<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Matrix.ts:84</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Transforms a vector with this matrix by transforming its rotation, scale, and translation.
+									Translation is applied after rotation and scale.</p>
+								</div>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>inVector: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The Vector to transform.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>Returns 
+								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
+							</h4>
+							<p>A new Vector representing the transformed original.</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-is-not-exported">
+						<a href="../enums/state.html" class="tsd-kind-icon">State</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-is-not-exported">
+						<a href="../enums/type.html" class="tsd-kind-icon">Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-is-not-exported">
+						<a href="../enums/zone.html" class="tsd-kind-icon">Zone</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="circlegesture.html" class="tsd-kind-icon">Circle<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="controller.html" class="tsd-kind-icon">Controller</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="defaultlistener.html" class="tsd-kind-icon">Default<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="eventdispatcher.html" class="tsd-kind-icon">Event<wbr>Dispatcher</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="finger.html" class="tsd-kind-icon">Finger</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="frame.html" class="tsd-kind-icon">Frame</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="gesture.html" class="tsd-kind-icon">Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="hand.html" class="tsd-kind-icon">Hand</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="interactionbox.html" class="tsd-kind-icon">Interaction<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="keytapgesture.html" class="tsd-kind-icon">Key<wbr>Tap<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="leapevent.html" class="tsd-kind-icon">Leap<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="leaputil.html" class="tsd-kind-icon">Leap<wbr>Util</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-is-not-exported">
+						<a href="matrix.html" class="tsd-kind-icon">Matrix</a>
+						<ul>
+							<li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="matrix.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="matrix.html#origin" class="tsd-kind-icon">origin</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="matrix.html#xbasis" class="tsd-kind-icon">x<wbr>Basis</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="matrix.html#ybasis" class="tsd-kind-icon">y<wbr>Basis</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="matrix.html#zbasis" class="tsd-kind-icon">z<wbr>Basis</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="matrix.html#static-identity" class="tsd-kind-icon">identity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="matrix.html#isequalto" class="tsd-kind-icon">is<wbr>Equal<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="matrix.html#multiply" class="tsd-kind-icon">multiply</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="matrix.html#multiplyassign" class="tsd-kind-icon">multiply<wbr>Assign</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="matrix.html#rigidinverse" class="tsd-kind-icon">rigid<wbr>Inverse</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="matrix.html#setrotation" class="tsd-kind-icon">set<wbr>Rotation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="matrix.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="matrix.html#transformdirection" class="tsd-kind-icon">transform<wbr>Direction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="matrix.html#transformpoint" class="tsd-kind-icon">transform<wbr>Point</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="pointable.html" class="tsd-kind-icon">Pointable</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="screentapgesture.html" class="tsd-kind-icon">Screen<wbr>Tap<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="swipegesture.html" class="tsd-kind-icon">Swipe<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="tool.html" class="tsd-kind-icon">Tool</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="vector3.html" class="tsd-kind-icon">Vector3</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

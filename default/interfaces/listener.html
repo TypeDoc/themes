@@ -1,0 +1,392 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Listener | Leap Motion</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Leap Motion</a>
+				</div>
+				<div class="table-cell" id="tsd-filter">
+					<input type="checkbox" id="tsd-filter-inherited" checked />
+					<label for="tsd-filter-inherited">Inherited</label>
+					<input type="checkbox" id="tsd-filter-private" checked />
+					<label for="tsd-filter-private">Private</label>
+					<input type="checkbox" id="tsd-filter-externals" checked />
+					<label for="tsd-filter-externals">Externals</label>
+					<input type="checkbox" id="tsd-filter-only-exported" />
+					<label for="tsd-filter-only-exported">Only exported</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="listener.html">Listener</a>
+				</li>
+			</ul>
+			<h1>Interface Listener</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="panel">
+		<div class="pannel-inner"></div>
+	</div>
+	<div class="row">
+		<div class="col-8">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The Listener interface defines a set of callback functions that you can
+						implement to respond to events dispatched by the Leap.</p>
+					</div>
+					<p>To handle Leap events, implement the Listener interface and assign
+						it to the Controller instance. The Controller calls the relevant Listener
+						callback when an event occurs, passing in a reference to itself.
+					You have to implement callbacks for every method specified in the interface.</p>
+					<p>Note: you have to create an instance of the LeapMotion class and set the Listener to your class:</p>
+					<listing>
+						leap = new LeapMotion();
+					leap.controller.setListener( this );</listing>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>logotype</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="listener.html#onconnect" class="tsd-kind-icon">on<wbr>Connect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="listener.html#ondisconnect" class="tsd-kind-icon">on<wbr>Disconnect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="listener.html#onexit" class="tsd-kind-icon">on<wbr>Exit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="listener.html#onframe" class="tsd-kind-icon">on<wbr>Frame</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="listener.html#oninit" class="tsd-kind-icon">on<wbr>Init</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="onconnect" class="anchor"></a>
+					<h3>on<wbr>Connect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Connect<span class="tsd-signature-symbol">(</span>controller<span class="tsd-signature-symbol">: </span><a href="../classes/controller.html" class="tsd-signature-type">Controller</a><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Listener.ts:29</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called when the Controller object connects to the Leap software,
+									or when this Listener object is added to a Controller that is already connected.</p>
+								</div>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>controller: <a href="../classes/controller.html" class="tsd-signature-type">Controller</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Controller object invoking this callback function.</p>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="ondisconnect" class="anchor"></a>
+					<h3>on<wbr>Disconnect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Disconnect<span class="tsd-signature-symbol">(</span>controller<span class="tsd-signature-symbol">: </span><a href="../classes/controller.html" class="tsd-signature-type">Controller</a><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Listener.ts:51</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called when the Controller object disconnects from the Leap software.</p>
+								</div>
+								<p>The controller can disconnect when the Leap device is unplugged,
+									the user shuts the Leap software down, or the Leap software encounters
+								an unrecoverable error.</p>
+								<listing>
+									public onDisconnect( controller:Controller ):void {
+									trace( &quot;Disconnected&quot; );
+								}</listing>
+								<p>Note: When you launch a Leap-enabled application in a debugger,
+									the Leap library does not disconnect from the application.
+									This is to allow you to step through code without losing the connection
+								because of time outs.</p>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>controller: <a href="../classes/controller.html" class="tsd-signature-type">Controller</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Controller object invoking this callback function.</p>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="onexit" class="anchor"></a>
+					<h3>on<wbr>Exit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Exit<span class="tsd-signature-symbol">(</span>controller<span class="tsd-signature-symbol">: </span><a href="../classes/controller.html" class="tsd-signature-type">Controller</a><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Listener.ts:65</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called when this Listener object is removed from the Controller or
+									the Controller instance is destroyed.</p>
+								</div>
+								<listing>
+									public onExit( controller:Controller ):void {
+									trace( &quot;Exited&quot; );
+								}</listing>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>controller: <a href="../classes/controller.html" class="tsd-signature-type">Controller</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Controller object invoking this callback function.</p>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="onframe" class="anchor"></a>
+					<h3>on<wbr>Frame</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Frame<span class="tsd-signature-symbol">(</span>controller<span class="tsd-signature-symbol">: </span><a href="../classes/controller.html" class="tsd-signature-type">Controller</a>, frame<span class="tsd-signature-symbol">: </span><a href="../classes/frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Listener.ts:90</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called when a new frame of hand and finger tracking data is available.</p>
+								</div>
+								<p>Access the new frame data using the <code>controller.frame()</code> function.</p>
+								<listing>
+									public onFrame( controller:Controller, frame:Frame ):void {
+									trace( &quot;New frame&quot; );
+								}</listing>
+								<p>Note, the Controller skips any pending onFrame events while your
+									onFrame handler executes. If your implementation takes too long to
+									return, one or more frames can be skipped. The Controller still inserts
+									the skipped frames into the frame history. You can access recent frames
+									by setting the history parameter when calling the <code>controller.frame()</code>
+									function. You can determine if any pending onFrame events were skipped
+									by comparing the ID of the most recent frame with the ID of the last
+								received frame.</p>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>controller: <a href="../classes/controller.html" class="tsd-signature-type">Controller</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Controller object invoking this callback function.</p>
+									</div>
+								</li>
+								<li>
+									<h5>frame: <a href="../classes/frame.html" class="tsd-signature-type">Frame</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The most recent frame object.</p>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="oninit" class="anchor"></a>
+					<h3>on<wbr>Init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Init<span class="tsd-signature-symbol">(</span>controller<span class="tsd-signature-symbol">: </span><a href="../classes/controller.html" class="tsd-signature-type">Controller</a><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in Listener.ts:103</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called once, when this Listener object is newly added to a Controller.</p>
+								</div>
+								<listing>
+									public onInit( controller:Controller ):void {
+									trace( &quot;Init&quot; );
+								}</listing>
+							</div>
+							<h4>Parameters</h4>
+							<ul>
+								<li>
+									<h5>controller: <a href="../classes/controller.html" class="tsd-signature-type">Controller</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Controller object invoking this callback function.</p>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-is-not-exported">
+						<a href="../enums/state.html" class="tsd-kind-icon">State</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-is-not-exported">
+						<a href="../enums/type.html" class="tsd-kind-icon">Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-is-not-exported">
+						<a href="../enums/zone.html" class="tsd-kind-icon">Zone</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-is-not-exported">
+						<a href="listener.html" class="tsd-kind-icon">Listener</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="listener.html#onconnect" class="tsd-kind-icon">on<wbr>Connect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="listener.html#ondisconnect" class="tsd-kind-icon">on<wbr>Disconnect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="listener.html#onexit" class="tsd-kind-icon">on<wbr>Exit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="listener.html#onframe" class="tsd-kind-icon">on<wbr>Frame</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="listener.html#oninit" class="tsd-kind-icon">on<wbr>Init</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/circlegesture.html" class="tsd-kind-icon">Circle<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/controller.html" class="tsd-kind-icon">Controller</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/defaultlistener.html" class="tsd-kind-icon">Default<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/eventdispatcher.html" class="tsd-kind-icon">Event<wbr>Dispatcher</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/finger.html" class="tsd-kind-icon">Finger</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/frame.html" class="tsd-kind-icon">Frame</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/gesture.html" class="tsd-kind-icon">Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/hand.html" class="tsd-kind-icon">Hand</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/interactionbox.html" class="tsd-kind-icon">Interaction<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/keytapgesture.html" class="tsd-kind-icon">Key<wbr>Tap<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/leapevent.html" class="tsd-kind-icon">Leap<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/leaputil.html" class="tsd-kind-icon">Leap<wbr>Util</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/matrix.html" class="tsd-kind-icon">Matrix</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/pointable.html" class="tsd-kind-icon">Pointable</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/screentapgesture.html" class="tsd-kind-icon">Screen<wbr>Tap<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/swipegesture.html" class="tsd-kind-icon">Swipe<wbr>Gesture</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/tool.html" class="tsd-kind-icon">Tool</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/vector3.html" class="tsd-kind-icon">Vector3</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
