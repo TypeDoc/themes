@@ -16,7 +16,7 @@
 			<div class="table-wrap">
 				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
-						<label for="tsd-search-field">Search</label>
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
 					</div>
 					<ul class="results">
@@ -25,15 +25,21 @@
 					</ul>
 					<a href="../index.html" class="title">Leap Motion</a>
 				</div>
-				<div class="table-cell" id="tsd-filter">
-					<input type="checkbox" id="tsd-filter-inherited" checked />
-					<label for="tsd-filter-inherited">Inherited</label>
-					<input type="checkbox" id="tsd-filter-private" checked />
-					<label for="tsd-filter-private">Private</label>
-					<input type="checkbox" id="tsd-filter-externals" checked />
-					<label for="tsd-filter-externals">Externals</label>
-					<input type="checkbox" id="tsd-filter-only-exported" />
-					<label for="tsd-filter-only-exported">Only exported</label>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-private" checked />
+							<label class="tsd-widget" for="tsd-filter-private">Private</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
 				</div>
 			</div>
 		</div>
@@ -154,7 +160,7 @@
 								<p>An uninitialized finger is considered invalid.
 								Get valid Finger objects from a Frame or a Hand object.</p>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="finger.html" class="tsd-signature-type">Finger</a>
 							</h4>
 						</li>
@@ -497,7 +503,7 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 									is valid or invalid.
 								(You can also use the <code>Finger.isValid()</code> function.)</p>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="finger.html" class="tsd-signature-type">Finger</a>
 							</h4>
 							<p>The invalid Finger instance.</p>
@@ -527,8 +533,8 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 									objects represent the exact same physical entities in
 								the same frame and both Pointable objects are valid.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>other: <a href="pointable.html" class="tsd-signature-type">Pointable</a></h5>
 									<div class="tsd-comment tsd-typography">
@@ -538,7 +544,7 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">boolean</span>
 							</h4>
 							<p>True; if equal, False otherwise.</p>
@@ -565,7 +571,7 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 									<p>Reports whether this is a valid Pointable object.</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">boolean</span>
 							</h4>
 							<p>True if <code>direction</code>, <code>tipPosition</code> and <code>tipVelocity</code> are true.</p>
@@ -592,7 +598,7 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 									<p>A string containing a brief, human readable description of the Pointable object.</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">string</span>
 							</h4>
 						</li>
@@ -800,6 +806,7 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 <div class="container tsd-generator">
 	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
 </div>
+<div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>

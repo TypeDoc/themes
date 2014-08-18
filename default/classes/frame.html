@@ -16,7 +16,7 @@
 			<div class="table-wrap">
 				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
-						<label for="tsd-search-field">Search</label>
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
 					</div>
 					<ul class="results">
@@ -25,15 +25,21 @@
 					</ul>
 					<a href="../index.html" class="title">Leap Motion</a>
 				</div>
-				<div class="table-cell" id="tsd-filter">
-					<input type="checkbox" id="tsd-filter-inherited" checked />
-					<label for="tsd-filter-inherited">Inherited</label>
-					<input type="checkbox" id="tsd-filter-private" checked />
-					<label for="tsd-filter-private">Private</label>
-					<input type="checkbox" id="tsd-filter-externals" checked />
-					<label for="tsd-filter-externals">Externals</label>
-					<input type="checkbox" id="tsd-filter-only-exported" />
-					<label for="tsd-filter-only-exported">Only exported</label>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-private" checked />
+							<label class="tsd-widget" for="tsd-filter-private">Private</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
 				</div>
 			</div>
 		</div>
@@ -144,7 +150,7 @@
 								<p>Frame instances created with this constructor are invalid.
 								Get valid Frame objects by calling the <code>LeapMotion.frame()</code> function.</p>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="frame.html" class="tsd-signature-type">Frame</a>
 							</h4>
 						</li>
@@ -418,8 +424,8 @@
 									</dd>
 								</dl>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
@@ -429,7 +435,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="finger.html" class="tsd-signature-type">Finger</a>
 							</h4>
 							<p>The Finger object with the matching ID if one exists
@@ -459,8 +465,8 @@
 								then an invalid Gesture object is returned.</p>
 								<p>All Gesture objects representing the same recognized movement share the same ID.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
@@ -470,7 +476,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="gesture.html" class="tsd-signature-type">Gesture</a>
 							</h4>
 							<p>The Gesture object in the frame with the specified ID if one
@@ -498,8 +504,8 @@
 								<p>If no frame is specifed, the gestures recognized or continuing in
 								this frame will be returned.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>sinceFrame?: <a href="frame.html" class="tsd-signature-type">Frame</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
 									<div class="tsd-comment tsd-typography">
@@ -510,7 +516,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="gesture.html" class="tsd-signature-type">Gesture</a><span class="tsd-signature-symbol">[]</span>
 							</h4>
 							<p>The list of gestures.</p>
@@ -548,8 +554,8 @@
 									</dd>
 								</dl>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
@@ -559,7 +565,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="hand.html" class="tsd-signature-type">Hand</a>
 							</h4>
 							<p>The Hand object with the matching ID if one exists
@@ -587,7 +593,7 @@
 									testing whether a given Frame instance is valid or invalid.
 								(You can also use the <code>Frame.isValid()</code> function.)</p>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="frame.html" class="tsd-signature-type">Frame</a>
 							</h4>
 							<p>The invalid Frame instance.</p>
@@ -614,8 +620,8 @@
 									represent the exact same frame of tracking data and both
 								Frame objects are valid.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>other: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
 									<div class="tsd-comment tsd-typography">
@@ -625,7 +631,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">boolean</span>
 							</h4>
 							<p>True; if equal. False otherwise.</p>
@@ -658,7 +664,7 @@
 									frame(n) returned a null object.<br/>
 								(You should still check that the returned Finger instance is valid.)</p>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">boolean</span>
 							</h4>
 							<p>True, if this is a valid Frame object; false otherwise.</p>
@@ -692,8 +698,8 @@
 									that finger or tool may have a different ID than that representing
 								the finger or tool in an earlier frame.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
@@ -703,7 +709,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="pointable.html" class="tsd-signature-type">Pointable</a>
 							</h4>
 							<p>The Pointable object with the matching ID if one exists
@@ -736,8 +742,8 @@
 								<p>If either this frame or sinceFrame is an invalid Frame object,
 								then the angle of rotation is zero.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
 									<div class="tsd-comment tsd-typography">
@@ -755,7 +761,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">number</span>
 							</h4>
 							<p>A positive value containing the heuristically determined rotational
@@ -788,8 +794,8 @@
 									object, or if no rotation is detected between the
 								two frames, a zero vector is returned.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
 									<div class="tsd-comment tsd-typography">
@@ -799,7 +805,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 							<p>A normalized direction Vector representing the axis of the
@@ -830,13 +836,13 @@
 									or if either this frame or sinceFrame are invalid Frame objects,
 								then this method returns an identity matrix.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="matrix.html" class="tsd-signature-type">Matrix</a>
 							</h4>
 						</li>
@@ -868,8 +874,8 @@
 								<p>If either this frame or sinceFrame is an invalid Frame object,
 								then this method returns 1.0.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
 									<div class="tsd-comment tsd-typography">
@@ -879,7 +885,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">number</span>
 							</h4>
 							<p>A positive value representing the heuristically determined
@@ -920,8 +926,8 @@
 									</dd>
 								</dl>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
@@ -931,7 +937,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="tool.html" class="tsd-signature-type">Tool</a>
 							</h4>
 							<p>The Tool object with the matching ID if one exists in
@@ -963,8 +969,8 @@
 								<p>If either this frame or sinceFrame is an invalid Frame object,
 								then this method returns a zero vector.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
 									<div class="tsd-comment tsd-typography">
@@ -974,7 +980,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 							<p>A Vector representing the heuristically determined change
@@ -1212,6 +1218,7 @@
 <div class="container tsd-generator">
 	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
 </div>
+<div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>

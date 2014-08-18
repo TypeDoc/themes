@@ -16,7 +16,7 @@
 			<div class="table-wrap">
 				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
-						<label for="tsd-search-field">Search</label>
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
 					</div>
 					<ul class="results">
@@ -25,15 +25,21 @@
 					</ul>
 					<a href="../index.html" class="title">Leap Motion</a>
 				</div>
-				<div class="table-cell" id="tsd-filter">
-					<input type="checkbox" id="tsd-filter-inherited" checked />
-					<label for="tsd-filter-inherited">Inherited</label>
-					<input type="checkbox" id="tsd-filter-private" checked />
-					<label for="tsd-filter-private">Private</label>
-					<input type="checkbox" id="tsd-filter-externals" checked />
-					<label for="tsd-filter-externals">Externals</label>
-					<input type="checkbox" id="tsd-filter-only-exported" />
-					<label for="tsd-filter-only-exported">Only exported</label>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-private" checked />
+							<label class="tsd-widget" for="tsd-filter-private">Private</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
 				</div>
 			</div>
 		</div>
@@ -121,7 +127,7 @@
 									<li>Defined in InteractionBox.ts:42</li>
 								</ul>
 							</aside>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="interactionbox.html" class="tsd-signature-type">InteractionBox</a>
 							</h4>
 						</li>
@@ -213,8 +219,8 @@
 								</div>
 								<p>This function performs the inverse of normalizePoint().</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>normalizedPosition: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 									<div class="tsd-comment tsd-typography">
@@ -224,7 +230,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 							<p>The corresponding denormalized position in device coordinates.</p>
@@ -251,7 +257,7 @@
 									testing whether a given InteractionBox instance is valid or invalid.
 								(You can also use the <code>InteractionBox.isValid()</code> function.)</p>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="interactionbox.html" class="tsd-signature-type">InteractionBox</a>
 							</h4>
 							<p>The invalid InteractionBox instance.</p>
@@ -277,13 +283,13 @@
 								<p>Two InteractionBox objects are equal if and only if both InteractionBox
 								objects represent the exact same InteractionBox and both InteractionBoxes are valid.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>other: <a href="interactionbox.html" class="tsd-signature-type">InteractionBox</a></h5>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">boolean</span>
 							</h4>
 						</li>
@@ -306,7 +312,7 @@
 									<p>Reports whether this is a valid InteractionBox object.</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">boolean</span>
 							</h4>
 							<p>True, if this InteractionBox object contains valid data.</p>
@@ -333,8 +339,8 @@
 									converted to a range of [0..1] such that the minimum value of the
 								InteractionBox maps to 0 and the maximum value of the InteractionBox maps to 1.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>position: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 									<div class="tsd-comment tsd-typography">
@@ -353,7 +359,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 							<p>The normalized position.</p>
@@ -377,7 +383,7 @@
 									<p>Writes a brief, human readable description of the InteractionBox object.</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">string</span>
 							</h4>
 							<p>A description of the InteractionBox as a string.</p>
@@ -562,6 +568,7 @@
 <div class="container tsd-generator">
 	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
 </div>
+<div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>

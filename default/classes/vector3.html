@@ -16,7 +16,7 @@
 			<div class="table-wrap">
 				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
-						<label for="tsd-search-field">Search</label>
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
 					</div>
 					<ul class="results">
@@ -25,15 +25,21 @@
 					</ul>
 					<a href="../index.html" class="title">Leap Motion</a>
 				</div>
-				<div class="table-cell" id="tsd-filter">
-					<input type="checkbox" id="tsd-filter-inherited" checked />
-					<label for="tsd-filter-inherited">Inherited</label>
-					<input type="checkbox" id="tsd-filter-private" checked />
-					<label for="tsd-filter-private">Private</label>
-					<input type="checkbox" id="tsd-filter-externals" checked />
-					<label for="tsd-filter-externals">Externals</label>
-					<input type="checkbox" id="tsd-filter-only-exported" />
-					<label for="tsd-filter-only-exported">Only exported</label>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-private" checked />
+							<label class="tsd-widget" for="tsd-filter-private">Private</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
 				</div>
 			</div>
 		</div>
@@ -163,8 +169,8 @@
 									<dd></dd>
 								</dl>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>x: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
@@ -190,7 +196,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -269,7 +275,7 @@
 									points downward, the angle is between 0 and -pi radians.</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">number</span>
 							</h4>
 							<p>The angle of this vector above or below the horizon (x-z plane).</p>
@@ -302,7 +308,7 @@
 									the palm, then this returns the tilt or roll of the palm
 								plane compared to the horizontal (x-z) plane.</p>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">number</span>
 							</h4>
 							<p>The angle of this vector to the right or left of the y-axis.</p>
@@ -332,7 +338,7 @@
 									between 0 and -pi radians.</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">number</span>
 							</h4>
 							<p>The angle of this vector to the right or left of the negative z-axis.</p>
@@ -364,8 +370,8 @@
 								than or equal to pi radians (180 degrees).</p>
 								<p>If either vector has zero length, then this returns zero.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 									<div class="tsd-comment tsd-typography">
@@ -375,7 +381,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">number</span>
 							</h4>
 							<p>The angle between this vector and the specified vector in radians.</p>
@@ -399,7 +405,7 @@
 									<p>The unit vector pointing backward along the positive z-axis: (0, 0, 1)</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -426,8 +432,8 @@
 									two vectors as sides. The direction of the returned vector is
 								determined by the right-hand rule. Thus <code>A.cross(B) === -B.cross(A)</code>.</p>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 									<div class="tsd-comment tsd-typography">
@@ -437,7 +443,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 							<p>The cross product of this vector and the specified vector.</p>
@@ -462,8 +468,8 @@
 									object and a point represented by the specified Vector object.</p>
 								</div>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 									<div class="tsd-comment tsd-typography">
@@ -473,7 +479,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">number</span>
 							</h4>
 							<p>The distance from this point to the specified point.</p>
@@ -497,13 +503,13 @@
 									<p>Divide vector by a scalar.</p>
 								</div>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>scalar: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -526,13 +532,13 @@
 									<p>Divide vector by a scalar and assign the value.</p>
 								</div>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>scalar: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 							<p>This Vector3.</p>
@@ -558,8 +564,8 @@
 									onto the specified vector.</p>
 								</div>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 									<div class="tsd-comment tsd-typography">
@@ -569,7 +575,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">number</span>
 							</h4>
 							<p>The dot product of this vector and the specified vector.</p>
@@ -593,7 +599,7 @@
 									<p>The unit vector pointing down along the negative y-axis: (0, -1, 0)</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -616,7 +622,7 @@
 									<p>The unit vector pointing forward along the negative z-axis: (0, 0, -1)</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -643,7 +649,7 @@
 									is valid or invalid.
 								(You can also use the Vector3.isValid property.)</p>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 							<p>The invalid Vector3 instance.</p>
@@ -667,8 +673,8 @@
 									<p>Compare Vector equality/inequality component-wise.</p>
 								</div>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 									<div class="tsd-comment tsd-typography">
@@ -678,7 +684,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">boolean</span>
 							</h4>
 							<p>True; if equal, False otherwise.</p>
@@ -702,7 +708,7 @@
 									<p>Returns true if all of the vector&#39;s components are finite.</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">boolean</span>
 							</h4>
 							<p>If any component is NaN or infinite, then this returns false.</p>
@@ -726,7 +732,7 @@
 									<p>The unit vector pointing left along the negative x-axis: (-1, 0, 0)</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -752,7 +758,7 @@
 									of this Vector object.</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">number</span>
 							</h4>
 							<p>The length of this vector.</p>
@@ -776,7 +782,7 @@
 									<p>The square of the magnitude, or length, of this vector.</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">number</span>
 							</h4>
 							<p>The square of the length of this vector.</p>
@@ -800,13 +806,13 @@
 									<p>A copy of this vector pointing in the opposite direction.</p>
 								</div>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -829,13 +835,13 @@
 									<p>A copy of this vector pointing in the opposite direction and assign the value.</p>
 								</div>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 							<p>This Vector3.</p>
@@ -859,13 +865,13 @@
 									<p>Multiply vector by a scalar.</p>
 								</div>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>scalar: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -888,13 +894,13 @@
 									<p>Multiply vector by a scalar and assign the quotient.</p>
 								</div>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>scalar: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 							<p>This Vector3.</p>
@@ -920,7 +926,7 @@
 									vector, but with a length of one.</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 							<p>A Vector object with a length of one, pointing in the same direction as this Vector object.</p>
@@ -944,7 +950,7 @@
 									<p>A copy of this vector pointing in the opposite direction.</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 							<p>A Vector3 object with all components negated.</p>
@@ -968,13 +974,13 @@
 									<p>Add vectors component-wise.</p>
 								</div>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -997,13 +1003,13 @@
 									<p>Add vectors component-wise and assign the value.</p>
 								</div>
 							</div>
-							<h4>Parameters</h4>
-							<ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 							<p>This Vector3.</p>
@@ -1027,7 +1033,7 @@
 									<p>The unit vector pointing right along the positive x-axis: (1, 0, 0)</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -1050,7 +1056,7 @@
 									<p>Returns a string containing this vector in a human readable format: (x, y, z).</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">string</span>
 							</h4>
 						</li>
@@ -1073,7 +1079,7 @@
 									<p>The unit vector pointing up along the positive x-axis: (0, 1, 0)</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -1096,7 +1102,7 @@
 									<p>The x-axis unit vector: (1, 0, 0)</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -1119,7 +1125,7 @@
 									<p>The y-axis unit vector: (0, 1, 0)</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -1142,7 +1148,7 @@
 									<p>The z-axis unit vector: (0, 0, 1)</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -1165,7 +1171,7 @@
 									<p>The zero vector: (0, 0, 0)</p>
 								</div>
 							</div>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
 							</h4>
 						</li>
@@ -1427,6 +1433,7 @@
 <div class="container tsd-generator">
 	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
 </div>
+<div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
