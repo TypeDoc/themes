@@ -3,13 +3,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-typedoc');
     grunt.loadNpmTasks('grunt-gh-pages');
-
-    function getTypeDocPath() {
-        var fs = require('fs');
-        return fs.existsSync('./local.json') ? require('./local.json').typeDocPath : 'typedoc/src/';
-    }
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -22,7 +16,7 @@ module.exports = function (grunt) {
                 dest: 'dist/'
             }
         },
-        typedoc: {
+        typedocc: {
             default: {
                 options: {
                     module: 'commonjs',
@@ -52,6 +46,26 @@ module.exports = function (grunt) {
                 src: '**/*'
             }
         }
+    });
+
+    grunt.registerTask('typedoc', function() {
+        var Path = require('path');
+        var TypeDoc = require('typedoc');
+
+        ['default', 'minimal'].forEach(function (theme) {
+            var settings = new TypeDoc.Settings();
+            settings.inputFiles.push(Path.resolve('./src/' + theme));
+            settings.expandInputFiles();
+
+            settings.out   = Path.resolve('./dist/' + theme);
+            settings.theme = theme;
+            settings.mode  = TypeDoc.SourceFileMode.File;
+            settings.name  = (theme == 'default' ? 'Leap Motion' : 'FS Extra');
+            settings.compilerOptions.target = TypeDoc.ScriptTarget.ES5;
+
+            var app = new TypeDoc.Application(settings);
+            app.generate(settings.inputFiles, settings.out);
+        });
     });
 
     grunt.registerTask('build', 'Create api documentation', [
