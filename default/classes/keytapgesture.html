@@ -29,10 +29,16 @@
 					<div id="tsd-filter">
 						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
 						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-private" checked />
-							<label class="tsd-widget" for="tsd-filter-private">Private</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
@@ -136,15 +142,14 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Constructor methods</h3>
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="keytapgesture.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="keytapgesture.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="keytapgesture.html#static-classtype" class="tsd-kind-icon">class<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="keytapgesture.html#direction" class="tsd-kind-icon">direction</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="keytapgesture.html#duration" class="tsd-kind-icon">duration</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="keytapgesture.html#durationseconds" class="tsd-kind-icon">duration<wbr>Seconds</a></li>
@@ -157,6 +162,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="keytapgesture.html#progress" class="tsd-kind-icon">progress</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="keytapgesture.html#state" class="tsd-kind-icon">state</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="keytapgesture.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="keytapgesture.html#classtype" class="tsd-kind-icon">class<wbr>Type</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited tsd-is-not-exported">
@@ -165,26 +171,28 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="keytapgesture.html#isequalto" class="tsd-kind-icon">is<wbr>Equal<wbr>To</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="keytapgesture.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="keytapgesture.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-not-exported"><a href="keytapgesture.html#invalid" class="tsd-kind-icon">invalid</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Constructor methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-					<a name="constructor" class="anchor"></a>
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">constructor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="keytapgesture.html" class="tsd-signature-type">KeyTapGesture</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Key<wbr>Tap<wbr>Gesture<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="keytapgesture.html" class="tsd-signature-type">KeyTapGesture</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<p>Overwrites 
 									<a href="gesture.html">Gesture</a>.<a href="gesture.html#constructor">constructor</a>
 								</p>
 								<ul>
-									<li>Defined in KeyTapGesture.ts:102</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/KeyTapGesture.ts#L94">KeyTapGesture.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -203,28 +211,13 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-classtype" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> class<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">class<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in KeyTapGesture.ts:67</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The type value designating a key tap gesture.</p>
-						</div>
-					</div>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="direction" class="anchor"></a>
+					<a name="direction" class="tsd-anchor"></a>
 					<h3>direction</h3>
 					<div class="tsd-signature tsd-kind-icon">direction<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in KeyTapGesture.ts:78</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/KeyTapGesture.ts#L79">KeyTapGesture.ts:79</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -239,7 +232,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="duration" class="anchor"></a>
+					<a name="duration" class="tsd-anchor"></a>
 					<h3>duration</h3>
 					<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
@@ -247,7 +240,7 @@
 							<a href="gesture.html">Gesture</a>.<a href="gesture.html#duration">duration</a>
 						</p>
 						<ul>
-							<li>Defined in Gesture.ts:196</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Gesture.ts#L197">Gesture.ts:197</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -262,7 +255,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="durationseconds" class="anchor"></a>
+					<a name="durationseconds" class="tsd-anchor"></a>
 					<h3>duration<wbr>Seconds</h3>
 					<div class="tsd-signature tsd-kind-icon">duration<wbr>Seconds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
@@ -270,7 +263,7 @@
 							<a href="gesture.html">Gesture</a>.<a href="gesture.html#durationseconds">durationSeconds</a>
 						</p>
 						<ul>
-							<li>Defined in Gesture.ts:201</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Gesture.ts#L202">Gesture.ts:202</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -280,7 +273,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="frame" class="anchor"></a>
+					<a name="frame" class="tsd-anchor"></a>
 					<h3>frame</h3>
 					<div class="tsd-signature tsd-kind-icon">frame<span class="tsd-signature-symbol">:</span> <a href="frame.html" class="tsd-signature-type">Frame</a></div>
 					<aside class="tsd-sources">
@@ -288,7 +281,7 @@
 							<a href="gesture.html">Gesture</a>.<a href="gesture.html#frame">frame</a>
 						</p>
 						<ul>
-							<li>Defined in Gesture.ts:206</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Gesture.ts#L207">Gesture.ts:207</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -298,7 +291,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="hands" class="anchor"></a>
+					<a name="hands" class="tsd-anchor"></a>
 					<h3>hands</h3>
 					<div class="tsd-signature tsd-kind-icon">hands<span class="tsd-signature-symbol">:</span> <a href="hand.html" class="tsd-signature-type">Hand</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
@@ -306,7 +299,7 @@
 							<a href="gesture.html">Gesture</a>.<a href="gesture.html#hands">hands</a>
 						</p>
 						<ul>
-							<li>Defined in Gesture.ts:213</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Gesture.ts#L214">Gesture.ts:214</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -317,7 +310,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="id" class="anchor"></a>
+					<a name="id" class="tsd-anchor"></a>
 					<h3>id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
@@ -325,7 +318,7 @@
 							<a href="gesture.html">Gesture</a>.<a href="gesture.html#id">id</a>
 						</p>
 						<ul>
-							<li>Defined in Gesture.ts:222</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Gesture.ts#L223">Gesture.ts:223</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -338,12 +331,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="pointable" class="anchor"></a>
+					<a name="pointable" class="tsd-anchor"></a>
 					<h3>pointable</h3>
 					<div class="tsd-signature tsd-kind-icon">pointable<span class="tsd-signature-symbol">:</span> <a href="pointable.html" class="tsd-signature-type">Pointable</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in KeyTapGesture.ts:83</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/KeyTapGesture.ts#L84">KeyTapGesture.ts:84</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -353,7 +346,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="pointables" class="anchor"></a>
+					<a name="pointables" class="tsd-anchor"></a>
 					<h3>pointables</h3>
 					<div class="tsd-signature tsd-kind-icon">pointables<span class="tsd-signature-symbol">:</span> <a href="pointable.html" class="tsd-signature-type">Pointable</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
@@ -361,7 +354,7 @@
 							<a href="gesture.html">Gesture</a>.<a href="gesture.html#pointables">pointables</a>
 						</p>
 						<ul>
-							<li>Defined in Gesture.ts:229</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Gesture.ts#L230">Gesture.ts:230</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -372,12 +365,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="position" class="anchor"></a>
+					<a name="position" class="tsd-anchor"></a>
 					<h3>position</h3>
 					<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in KeyTapGesture.ts:88</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/KeyTapGesture.ts#L89">KeyTapGesture.ts:89</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -387,12 +380,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="progress" class="anchor"></a>
+					<a name="progress" class="tsd-anchor"></a>
 					<h3>progress</h3>
 					<div class="tsd-signature tsd-kind-icon">progress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in KeyTapGesture.ts:93</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/KeyTapGesture.ts#L94">KeyTapGesture.ts:94</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -402,7 +395,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="state" class="anchor"></a>
+					<a name="state" class="tsd-anchor"></a>
 					<h3>state</h3>
 					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="../enums/state.html" class="tsd-signature-type">State</a></div>
 					<aside class="tsd-sources">
@@ -410,7 +403,7 @@
 							<a href="gesture.html">Gesture</a>.<a href="gesture.html#state">state</a>
 						</p>
 						<ul>
-							<li>Defined in Gesture.ts:238</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Gesture.ts#L239">Gesture.ts:239</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -423,7 +416,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="type" class="anchor"></a>
+					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/type.html" class="tsd-signature-type">Type</a></div>
 					<aside class="tsd-sources">
@@ -431,7 +424,7 @@
 							<a href="gesture.html">Gesture</a>.<a href="gesture.html#type">type</a>
 						</p>
 						<ul>
-							<li>Defined in Gesture.ts:243</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Gesture.ts#L244">Gesture.ts:244</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -440,22 +433,38 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="classtype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> class<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">class<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/KeyTapGesture.ts#L68">KeyTapGesture.ts:68</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The type value designating a key tap gesture.</p>
+						</div>
+					</div>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-not-exported">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="isequalto" class="anchor"></a>
+					<a name="isequalto" class="tsd-anchor"></a>
 					<h3>is<wbr>Equal<wbr>To</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">is<wbr>Equal<wbr>To<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="gesture.html" class="tsd-signature-type">Gesture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<p>Inherited from 
 									<a href="gesture.html">Gesture</a>.<a href="gesture.html#isequalto">isEqualTo</a>
 								</p>
 								<ul>
-									<li>Defined in Gesture.ts:267</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Gesture.ts#L268">Gesture.ts:268</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -470,9 +479,7 @@
 								<li>
 									<h5>other: <a href="gesture.html" class="tsd-signature-type">Gesture</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The Gesture to compare with.</p>
-										</div>
+										<p>The Gesture to compare with.</p>
 									</div>
 								</li>
 							</ul>
@@ -484,18 +491,19 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="isvalid" class="anchor"></a>
+					<a name="isvalid" class="tsd-anchor"></a>
 					<h3>is<wbr>Valid</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<p>Inherited from 
 									<a href="gesture.html">Gesture</a>.<a href="gesture.html#isvalid">isValid</a>
 								</p>
 								<ul>
-									<li>Defined in Gesture.ts:286</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Gesture.ts#L287">Gesture.ts:287</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -518,18 +526,19 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="tostring" class="anchor"></a>
+					<a name="tostring" class="tsd-anchor"></a>
 					<h3>to<wbr>String</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<p>Inherited from 
 									<a href="gesture.html">Gesture</a>.<a href="gesture.html#tostring">toString</a>
 								</p>
 								<ul>
-									<li>Defined in Gesture.ts:313</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Gesture.ts#L314">Gesture.ts:314</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -540,6 +549,37 @@
 							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">string</span>
 							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-not-exported">
+					<a name="invalid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> invalid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">invalid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gesture.html" class="tsd-signature-type">Gesture</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from 
+									<a href="gesture.html">Gesture</a>.<a href="gesture.html#invalid">invalid</a>
+								</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Gesture.ts#L305">Gesture.ts:305</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an invalid Gesture object.</p>
+								</div>
+								<p>You can use the instance returned by this in comparisons
+									testing whether a given Gesture instance is valid or invalid.
+								(You can also use the <code>Gesture.isValid()</code> function.)</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns 
+								<a href="gesture.html" class="tsd-signature-type">Gesture</a>
+							</h4>
+							<p>The invalid Gesture instance.</p>
 						</li>
 					</ul>
 				</section>
@@ -563,9 +603,6 @@
 					</li>
 					<li class=" tsd-kind-enum tsd-is-not-exported">
 						<a href="../enums/zone.html" class="tsd-kind-icon">Zone</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
 					</li>
 					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="circlegesture.html" class="tsd-kind-icon">Circle<wbr>Gesture</a>
@@ -599,11 +636,8 @@
 					<li class="current tsd-kind-class tsd-is-not-exported">
 						<a href="keytapgesture.html" class="tsd-kind-icon">Key<wbr>Tap<wbr>Gesture</a>
 						<ul>
-							<li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 								<a href="keytapgesture.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="keytapgesture.html#static-classtype" class="tsd-kind-icon">class<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="keytapgesture.html#direction" class="tsd-kind-icon">direction</a>
@@ -641,6 +675,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="keytapgesture.html#type" class="tsd-kind-icon">type</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="keytapgesture.html#classtype" class="tsd-kind-icon">class<wbr>Type</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="keytapgesture.html#isequalto" class="tsd-kind-icon">is<wbr>Equal<wbr>To</a>
 							</li>
@@ -649,6 +686,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="keytapgesture.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-not-exported">
+								<a href="keytapgesture.html#invalid" class="tsd-kind-icon">invalid</a>
 							</li>
 						</ul>
 					</li>
@@ -678,6 +718,9 @@
 					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="vector3.html" class="tsd-kind-icon">Vector3</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -688,50 +731,56 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-container"><span class="tsd-kind-icon">Container, dynamic module</span></li>
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-construct-signature"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-call-signature"><span class="tsd-kind-icon">Function, call signature, accessor</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
 				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited member</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private member</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li>&nbsp;</li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static member</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>

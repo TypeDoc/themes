@@ -29,10 +29,16 @@
 					<div id="tsd-filter">
 						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
 						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-private" checked />
-							<label class="tsd-widget" for="tsd-filter-private">Private</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
@@ -61,27 +67,35 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">LeapEvent</span>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Constructor methods</h3>
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported"><a href="leapevent.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported"><a href="leapevent.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="leapevent.html#static-leapmotion_connected" class="tsd-kind-icon">LEAPMOTION_<wbr>CONNECTED</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="leapevent.html#static-leapmotion_disconnected" class="tsd-kind-icon">LEAPMOTION_<wbr>DISCONNECTED</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="leapevent.html#static-leapmotion_exit" class="tsd-kind-icon">LEAPMOTION_<wbr>EXIT</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="leapevent.html#static-leapmotion_frame" class="tsd-kind-icon">LEAPMOTION_<wbr>FRAME</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="leapevent.html#static-leapmotion_init" class="tsd-kind-icon">LEAPMOTION_<wbr>INIT</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="leapevent.html#_target" class="tsd-kind-icon">_target</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="leapevent.html#_type" class="tsd-kind-icon">_type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="leapevent.html#frame" class="tsd-kind-icon">frame</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="leapevent.html#leapmotion_connected" class="tsd-kind-icon">LEAPMOTION_<wbr>CONNECTED</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="leapevent.html#leapmotion_disconnected" class="tsd-kind-icon">LEAPMOTION_<wbr>DISCONNECTED</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="leapevent.html#leapmotion_exit" class="tsd-kind-icon">LEAPMOTION_<wbr>EXIT</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="leapevent.html#leapmotion_frame" class="tsd-kind-icon">LEAPMOTION_<wbr>FRAME</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="leapevent.html#leapmotion_init" class="tsd-kind-icon">LEAPMOTION_<wbr>INIT</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -95,17 +109,18 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Constructor methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="constructor" class="anchor"></a>
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">constructor<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetListener<span class="tsd-signature-symbol">: </span><a href="../interfaces/listener.html" class="tsd-signature-type">Listener</a>, frame<span class="tsd-signature-symbol">?: </span><a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol"> =&nbsp;</span>null<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="leapevent.html" class="tsd-signature-type">LeapEvent</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Leap<wbr>Event<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetListener<span class="tsd-signature-symbol">: </span><a href="../interfaces/listener.html" class="tsd-signature-type">Listener</a>, frame<span class="tsd-signature-symbol">?: </span><a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="leapevent.html" class="tsd-signature-type">LeapEvent</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in util/LeapEvent.ts:15</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/util/LeapEvent.ts#L14">util/LeapEvent.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -117,7 +132,7 @@
 									<h5>targetListener: <a href="../interfaces/listener.html" class="tsd-signature-type">Listener</a></h5>
 								</li>
 								<li>
-									<h5>frame?: <a href="frame.html" class="tsd-signature-type">Frame</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> frame: <a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns 
@@ -129,83 +144,83 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-leapmotion_connected" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> LEAPMOTION_<wbr>CONNECTED</h3>
-					<div class="tsd-signature tsd-kind-icon">LEAPMOTION_<wbr>CONNECTED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in util/LeapEvent.ts:5</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-leapmotion_disconnected" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> LEAPMOTION_<wbr>DISCONNECTED</h3>
-					<div class="tsd-signature tsd-kind-icon">LEAPMOTION_<wbr>DISCONNECTED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in util/LeapEvent.ts:6</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-leapmotion_exit" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> LEAPMOTION_<wbr>EXIT</h3>
-					<div class="tsd-signature tsd-kind-icon">LEAPMOTION_<wbr>EXIT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in util/LeapEvent.ts:7</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-leapmotion_frame" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> LEAPMOTION_<wbr>FRAME</h3>
-					<div class="tsd-signature tsd-kind-icon">LEAPMOTION_<wbr>FRAME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in util/LeapEvent.ts:8</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-leapmotion_init" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> LEAPMOTION_<wbr>INIT</h3>
-					<div class="tsd-signature tsd-kind-icon">LEAPMOTION_<wbr>INIT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in util/LeapEvent.ts:4</li>
-						</ul>
-					</aside>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="_target" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagprivate">private</span> _target</h3>
+					<a name="_target" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _target</h3>
 					<div class="tsd-signature tsd-kind-icon">_target<span class="tsd-signature-symbol">:</span> <a href="../interfaces/listener.html" class="tsd-signature-type">Listener</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in util/LeapEvent.ts:11</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/util/LeapEvent.ts#L12">util/LeapEvent.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="_type" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagprivate">private</span> _type</h3>
+					<a name="_type" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _type</h3>
 					<div class="tsd-signature tsd-kind-icon">_type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in util/LeapEvent.ts:10</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/util/LeapEvent.ts#L11">util/LeapEvent.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="frame" class="anchor"></a>
+					<a name="frame" class="tsd-anchor"></a>
 					<h3>frame</h3>
 					<div class="tsd-signature tsd-kind-icon">frame<span class="tsd-signature-symbol">:</span> <a href="frame.html" class="tsd-signature-type">Frame</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in util/LeapEvent.ts:13</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/util/LeapEvent.ts#L14">util/LeapEvent.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="leapmotion_connected" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> LEAPMOTION_<wbr>CONNECTED</h3>
+					<div class="tsd-signature tsd-kind-icon">LEAPMOTION_<wbr>CONNECTED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/util/LeapEvent.ts#L6">util/LeapEvent.ts:6</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="leapmotion_disconnected" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> LEAPMOTION_<wbr>DISCONNECTED</h3>
+					<div class="tsd-signature tsd-kind-icon">LEAPMOTION_<wbr>DISCONNECTED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/util/LeapEvent.ts#L7">util/LeapEvent.ts:7</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="leapmotion_exit" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> LEAPMOTION_<wbr>EXIT</h3>
+					<div class="tsd-signature tsd-kind-icon">LEAPMOTION_<wbr>EXIT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/util/LeapEvent.ts#L8">util/LeapEvent.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="leapmotion_frame" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> LEAPMOTION_<wbr>FRAME</h3>
+					<div class="tsd-signature tsd-kind-icon">LEAPMOTION_<wbr>FRAME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/util/LeapEvent.ts#L9">util/LeapEvent.ts:9</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="leapmotion_init" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> LEAPMOTION_<wbr>INIT</h3>
+					<div class="tsd-signature tsd-kind-icon">LEAPMOTION_<wbr>INIT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/util/LeapEvent.ts#L5">util/LeapEvent.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -213,15 +228,16 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="gettarget" class="anchor"></a>
+					<a name="gettarget" class="tsd-anchor"></a>
 					<h3>get<wbr>Target</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Target<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in util/LeapEvent.ts:22</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/util/LeapEvent.ts#L23">util/LeapEvent.ts:23</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns 
@@ -231,15 +247,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="gettype" class="anchor"></a>
+					<a name="gettype" class="tsd-anchor"></a>
 					<h3>get<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in util/LeapEvent.ts:27</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/util/LeapEvent.ts#L28">util/LeapEvent.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns 
@@ -268,9 +285,6 @@
 					</li>
 					<li class=" tsd-kind-enum tsd-is-not-exported">
 						<a href="../enums/zone.html" class="tsd-kind-icon">Zone</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
 					</li>
 					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="circlegesture.html" class="tsd-kind-icon">Circle<wbr>Gesture</a>
@@ -307,23 +321,8 @@
 					<li class="current tsd-kind-class tsd-is-not-exported">
 						<a href="leapevent.html" class="tsd-kind-icon">Leap<wbr>Event</a>
 						<ul>
-							<li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
 								<a href="leapevent.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="leapevent.html#static-leapmotion_connected" class="tsd-kind-icon">LEAPMOTION_<wbr>CONNECTED</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="leapevent.html#static-leapmotion_disconnected" class="tsd-kind-icon">LEAPMOTION_<wbr>DISCONNECTED</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="leapevent.html#static-leapmotion_exit" class="tsd-kind-icon">LEAPMOTION_<wbr>EXIT</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="leapevent.html#static-leapmotion_frame" class="tsd-kind-icon">LEAPMOTION_<wbr>FRAME</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="leapevent.html#static-leapmotion_init" class="tsd-kind-icon">LEAPMOTION_<wbr>INIT</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
 								<a href="leapevent.html#_target" class="tsd-kind-icon">_target</a>
@@ -333,6 +332,21 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="leapevent.html#frame" class="tsd-kind-icon">frame</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="leapevent.html#leapmotion_connected" class="tsd-kind-icon">LEAPMOTION_<wbr>CONNECTED</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="leapevent.html#leapmotion_disconnected" class="tsd-kind-icon">LEAPMOTION_<wbr>DISCONNECTED</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="leapevent.html#leapmotion_exit" class="tsd-kind-icon">LEAPMOTION_<wbr>EXIT</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="leapevent.html#leapmotion_frame" class="tsd-kind-icon">LEAPMOTION_<wbr>FRAME</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="leapevent.html#leapmotion_init" class="tsd-kind-icon">LEAPMOTION_<wbr>INIT</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="leapevent.html#gettarget" class="tsd-kind-icon">get<wbr>Target</a>
@@ -365,6 +379,9 @@
 					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="vector3.html" class="tsd-kind-icon">Vector3</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -375,50 +392,56 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-container"><span class="tsd-kind-icon">Container, dynamic module</span></li>
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-construct-signature"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-call-signature"><span class="tsd-kind-icon">Function, call signature, accessor</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
 				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited member</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private member</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li>&nbsp;</li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static member</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>

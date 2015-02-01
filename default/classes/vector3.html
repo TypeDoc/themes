@@ -29,10 +29,16 @@
 					<div id="tsd-filter">
 						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
 						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-private" checked />
-							<label class="tsd-widget" for="tsd-filter-private">Private</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
@@ -82,14 +88,22 @@
 					</dl>
 				</div>
 			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Vector3</span>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Constructor methods</h3>
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -101,29 +115,24 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Get accessors</h3>
+							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-accessor tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#pitch" class="tsd-kind-icon">pitch</a></li>
-								<li class="tsd-kind-get-accessor tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#roll" class="tsd-kind-icon">roll</a></li>
-								<li class="tsd-kind-get-accessor tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#yaw" class="tsd-kind-icon">yaw</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#pitch" class="tsd-kind-icon">pitch</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#roll" class="tsd-kind-icon">roll</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#yaw" class="tsd-kind-icon">yaw</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#angleto" class="tsd-kind-icon">angle<wbr>To</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#static-backward" class="tsd-kind-icon">backward</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#cross" class="tsd-kind-icon">cross</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#distanceto" class="tsd-kind-icon">distance<wbr>To</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#divide" class="tsd-kind-icon">divide</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#divideassign" class="tsd-kind-icon">divide<wbr>Assign</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#dot" class="tsd-kind-icon">dot</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#static-down" class="tsd-kind-icon">down</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#static-forward" class="tsd-kind-icon">forward</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#static-invalid" class="tsd-kind-icon">invalid</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#isequalto" class="tsd-kind-icon">is<wbr>Equal<wbr>To</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#static-left" class="tsd-kind-icon">left</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#magnitude" class="tsd-kind-icon">magnitude</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#magnitudesquared" class="tsd-kind-icon">magnitude<wbr>Squared</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#minus" class="tsd-kind-icon">minus</a></li>
@@ -134,30 +143,36 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#opposite" class="tsd-kind-icon">opposite</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#plus" class="tsd-kind-icon">plus</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#plusassign" class="tsd-kind-icon">plus<wbr>Assign</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#static-right" class="tsd-kind-icon">right</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="vector3.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#static-up" class="tsd-kind-icon">up</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#static-xaxis" class="tsd-kind-icon">x<wbr>Axis</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#static-yaxis" class="tsd-kind-icon">y<wbr>Axis</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#static-zaxis" class="tsd-kind-icon">z<wbr>Axis</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#static-zero" class="tsd-kind-icon">zero</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#backward" class="tsd-kind-icon">backward</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#down" class="tsd-kind-icon">down</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#forward" class="tsd-kind-icon">forward</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#invalid" class="tsd-kind-icon">invalid</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#left" class="tsd-kind-icon">left</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#right" class="tsd-kind-icon">right</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#up" class="tsd-kind-icon">up</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#xaxis" class="tsd-kind-icon">x<wbr>Axis</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#yaxis" class="tsd-kind-icon">y<wbr>Axis</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#zaxis" class="tsd-kind-icon">z<wbr>Axis</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="vector3.html#zero" class="tsd-kind-icon">zero</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Constructor methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="constructor" class="anchor"></a>
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">constructor<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Vector3<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:41</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L32">Vector3.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -206,12 +221,12 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="x" class="anchor"></a>
+					<a name="x" class="tsd-anchor"></a>
 					<h3>x</h3>
 					<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Vector3.ts:21</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L22">Vector3.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -221,12 +236,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="y" class="anchor"></a>
+					<a name="y" class="tsd-anchor"></a>
 					<h3>y</h3>
 					<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Vector3.ts:26</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L27">Vector3.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -236,12 +251,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="z" class="anchor"></a>
+					<a name="z" class="tsd-anchor"></a>
 					<h3>z</h3>
 					<div class="tsd-signature tsd-kind-icon">z<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Vector3.ts:31</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L32">Vector3.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -252,112 +267,86 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Get accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-accessor tsd-parent-kind-class tsd-is-not-exported">
-					<a name="pitch" class="anchor"></a>
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported">
+					<a name="pitch" class="tsd-anchor"></a>
 					<h3>pitch</h3>
-					<ul class="tsd-signatures tsd-kind-get-accessor tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">pitch<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
-								<ul>
-									<li>Defined in Vector3.ts:314</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>The pitch angle in radians.
-										Pitch is the angle between the negative z-axis and the projection
-										of the vector onto the y-z plane. In other words, pitch represents
-										rotation around the x-axis. If the vector points upward, the
-										returned angle is between 0 and pi radians (180 degrees); if it
-									points downward, the angle is between 0 and -pi radians.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<span class="tsd-signature-type">number</span>
-							</h4>
-							<p>The angle of this vector above or below the horizon (x-z plane).</p>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">pitch<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L315">Vector3.ts:315</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The pitch angle in radians.
+								Pitch is the angle between the negative z-axis and the projection
+								of the vector onto the y-z plane. In other words, pitch represents
+								rotation around the x-axis. If the vector points upward, the
+								returned angle is between 0 and pi radians (180 degrees); if it
+							points downward, the angle is between 0 and -pi radians.</p>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-accessor tsd-parent-kind-class tsd-is-not-exported">
-					<a name="roll" class="anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported">
+					<a name="roll" class="tsd-anchor"></a>
 					<h3>roll</h3>
-					<ul class="tsd-signatures tsd-kind-get-accessor tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">roll<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
-								<ul>
-									<li>Defined in Vector3.ts:352</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>The roll angle in radians.
-										Roll is the angle between the y-axis and the projection of the vector
-										onto the x-y plane. In other words, roll represents rotation around
-										the z-axis. If the vector points to the left of the y-axis, then the
-										returned angle is between 0 and pi radians (180 degrees); if it
-									points to the right, the angle is between 0 and -pi radians.</p>
-								</div>
-								<p>Use this to roll angle of the plane to which this vector
-									is a normal. For example, if this vector represents the normal to
-									the palm, then this returns the tilt or roll of the palm
-								plane compared to the horizontal (x-z) plane.</p>
-							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<span class="tsd-signature-type">number</span>
-							</h4>
-							<p>The angle of this vector to the right or left of the y-axis.</p>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">roll<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L353">Vector3.ts:353</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The roll angle in radians.
+								Roll is the angle between the y-axis and the projection of the vector
+								onto the x-y plane. In other words, roll represents rotation around
+								the z-axis. If the vector points to the left of the y-axis, then the
+								returned angle is between 0 and pi radians (180 degrees); if it
+							points to the right, the angle is between 0 and -pi radians.</p>
+						</div>
+						<p>Use this to roll angle of the plane to which this vector
+							is a normal. For example, if this vector represents the normal to
+							the palm, then this returns the tilt or roll of the palm
+						plane compared to the horizontal (x-z) plane.</p>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-accessor tsd-parent-kind-class tsd-is-not-exported">
-					<a name="yaw" class="anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported">
+					<a name="yaw" class="tsd-anchor"></a>
 					<h3>yaw</h3>
-					<ul class="tsd-signatures tsd-kind-get-accessor tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">yaw<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
-								<ul>
-									<li>Defined in Vector3.ts:331</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>The yaw angle in radians.
-										Yaw is the angle between the negative z-axis and the projection
-										of the vector onto the x-z plane. In other words, yaw represents
-										rotation around the y-axis. If the vector points to the right of
-										the negative z-axis, then the returned angle is between 0 and pi
-										radians (180 degrees); if it points to the left, the angle is
-									between 0 and -pi radians.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<span class="tsd-signature-type">number</span>
-							</h4>
-							<p>The angle of this vector to the right or left of the negative z-axis.</p>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">yaw<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L332">Vector3.ts:332</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The yaw angle in radians.
+								Yaw is the angle between the negative z-axis and the projection
+								of the vector onto the x-z plane. In other words, yaw represents
+								rotation around the y-axis. If the vector points to the right of
+								the negative z-axis, then the returned angle is between 0 and pi
+								radians (180 degrees); if it points to the left, the angle is
+							between 0 and -pi radians.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="angleto" class="anchor"></a>
+					<a name="angleto" class="tsd-anchor"></a>
 					<h3>angle<wbr>To</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">angle<wbr>To<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:183</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L184">Vector3.ts:184</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -375,9 +364,7 @@
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>A Vector object.</p>
-										</div>
+										<p>A Vector object.</p>
 									</div>
 								</li>
 							</ul>
@@ -388,39 +375,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-backward" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> backward</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">backward<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
-								<ul>
-									<li>Defined in Vector3.ts:452</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>The unit vector pointing backward along the positive z-axis: (0, 0, 1)</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
-							</h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="cross" class="anchor"></a>
+					<a name="cross" class="tsd-anchor"></a>
 					<h3>cross</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">cross<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:204</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L205">Vector3.ts:205</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -437,9 +402,7 @@
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>A Vector object.</p>
-										</div>
+										<p>A Vector object.</p>
 									</div>
 								</li>
 							</ul>
@@ -451,15 +414,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="distanceto" class="anchor"></a>
+					<a name="distanceto" class="tsd-anchor"></a>
 					<h3>distance<wbr>To</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">distance<wbr>To<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:217</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L218">Vector3.ts:218</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -473,9 +437,7 @@
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>A Vector object.</p>
-										</div>
+										<p>A Vector object.</p>
 									</div>
 								</li>
 							</ul>
@@ -487,15 +449,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="divide" class="anchor"></a>
+					<a name="divide" class="tsd-anchor"></a>
 					<h3>divide</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">divide<span class="tsd-signature-symbol">(</span>scalar<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:139</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L140">Vector3.ts:140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -516,15 +479,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="divideassign" class="anchor"></a>
+					<a name="divideassign" class="tsd-anchor"></a>
 					<h3>divide<wbr>Assign</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">divide<wbr>Assign<span class="tsd-signature-symbol">(</span>scalar<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:150</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L151">Vector3.ts:151</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -546,15 +510,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="dot" class="anchor"></a>
+					<a name="dot" class="tsd-anchor"></a>
 					<h3>dot</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">dot<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:231</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L232">Vector3.ts:232</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -569,9 +534,7 @@
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>A Vector object.</p>
-										</div>
+										<p>A Vector object.</p>
 									</div>
 								</li>
 							</ul>
@@ -582,90 +545,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-down" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> down</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">down<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
-								<ul>
-									<li>Defined in Vector3.ts:422</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>The unit vector pointing down along the negative y-axis: (0, -1, 0)</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
-							</h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-forward" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> forward</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">forward<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
-								<ul>
-									<li>Defined in Vector3.ts:442</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>The unit vector pointing forward along the negative z-axis: (0, 0, -1)</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
-							</h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-invalid" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> invalid</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">invalid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
-								<ul>
-									<li>Defined in Vector3.ts:257</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns an invalid Vector3 object.</p>
-								</div>
-								<p>You can use the instance returned by this in
-									comparisons testing whether a given Vector3 instance
-									is valid or invalid.
-								(You can also use the Vector3.isValid property.)</p>
-							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
-							</h4>
-							<p>The invalid Vector3 instance.</p>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="isequalto" class="anchor"></a>
+					<a name="isequalto" class="tsd-anchor"></a>
 					<h3>is<wbr>Equal<wbr>To</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">is<wbr>Equal<wbr>To<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:164</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L165">Vector3.ts:165</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -678,9 +568,7 @@
 								<li>
 									<h5>other: <a href="vector3.html" class="tsd-signature-type">Vector3</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The Vector3 to compare with.</p>
-										</div>
+										<p>The Vector3 to compare with.</p>
 									</div>
 								</li>
 							</ul>
@@ -692,15 +580,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="isvalid" class="anchor"></a>
+					<a name="isvalid" class="tsd-anchor"></a>
 					<h3>is<wbr>Valid</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:241</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L242">Vector3.ts:242</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -715,39 +604,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-left" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> left</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">left<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
-								<ul>
-									<li>Defined in Vector3.ts:402</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>The unit vector pointing left along the negative x-axis: (-1, 0, 0)</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
-							</h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="magnitude" class="anchor"></a>
+					<a name="magnitude" class="tsd-anchor"></a>
 					<h3>magnitude</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">magnitude<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:271</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L272">Vector3.ts:272</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -766,15 +633,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="magnitudesquared" class="anchor"></a>
+					<a name="magnitudesquared" class="tsd-anchor"></a>
 					<h3>magnitude<wbr>Squared</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">magnitude<wbr>Squared<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:281</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L282">Vector3.ts:282</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -790,15 +658,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="minus" class="anchor"></a>
+					<a name="minus" class="tsd-anchor"></a>
 					<h3>minus</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">minus<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:89</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L90">Vector3.ts:90</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -819,15 +688,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="minusassign" class="anchor"></a>
+					<a name="minusassign" class="tsd-anchor"></a>
 					<h3>minus<wbr>Assign</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">minus<wbr>Assign<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:100</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L101">Vector3.ts:101</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -849,15 +719,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="multiply" class="anchor"></a>
+					<a name="multiply" class="tsd-anchor"></a>
 					<h3>multiply</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">multiply<span class="tsd-signature-symbol">(</span>scalar<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:114</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L115">Vector3.ts:115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -878,15 +749,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="multiplyassign" class="anchor"></a>
+					<a name="multiplyassign" class="tsd-anchor"></a>
 					<h3>multiply<wbr>Assign</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">multiply<wbr>Assign<span class="tsd-signature-symbol">(</span>scalar<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:125</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L126">Vector3.ts:126</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -908,15 +780,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="normalized" class="anchor"></a>
+					<a name="normalized" class="tsd-anchor"></a>
 					<h3>normalized</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">normalized<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:293</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L294">Vector3.ts:294</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -934,15 +807,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="opposite" class="anchor"></a>
+					<a name="opposite" class="tsd-anchor"></a>
 					<h3>opposite</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">opposite<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:53</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L54">Vector3.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -958,15 +832,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="plus" class="anchor"></a>
+					<a name="plus" class="tsd-anchor"></a>
 					<h3>plus</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">plus<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:64</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L65">Vector3.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -987,15 +862,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="plusassign" class="anchor"></a>
+					<a name="plusassign" class="tsd-anchor"></a>
 					<h3>plus<wbr>Assign</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">plus<wbr>Assign<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:75</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L76">Vector3.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1016,39 +892,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-right" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> right</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">right<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
-								<ul>
-									<li>Defined in Vector3.ts:412</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>The unit vector pointing right along the positive x-axis: (1, 0, 0)</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
-							</h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="tostring" class="anchor"></a>
+					<a name="tostring" class="tsd-anchor"></a>
 					<h3>to<wbr>String</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:462</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L463">Vector3.ts:463</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1063,15 +917,165 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-up" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> up</h3>
+					<a name="backward" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> backward</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">backward<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L453">Vector3.ts:453</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The unit vector pointing backward along the positive z-axis: (0, 0, 1)</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns 
+								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="down" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> down</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">down<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L423">Vector3.ts:423</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The unit vector pointing down along the negative y-axis: (0, -1, 0)</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns 
+								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="forward" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> forward</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">forward<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L443">Vector3.ts:443</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The unit vector pointing forward along the negative z-axis: (0, 0, -1)</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns 
+								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="invalid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> invalid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">invalid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L258">Vector3.ts:258</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an invalid Vector3 object.</p>
+								</div>
+								<p>You can use the instance returned by this in
+									comparisons testing whether a given Vector3 instance
+									is valid or invalid.
+								(You can also use the Vector3.isValid property.)</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns 
+								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
+							</h4>
+							<p>The invalid Vector3 instance.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="left" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> left</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">left<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L403">Vector3.ts:403</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The unit vector pointing left along the negative x-axis: (-1, 0, 0)</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns 
+								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="right" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> right</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">right<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L413">Vector3.ts:413</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The unit vector pointing right along the positive x-axis: (1, 0, 0)</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns 
+								<a href="vector3.html" class="tsd-signature-type">Vector3</a>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="up" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> up</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">up<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:432</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L433">Vector3.ts:433</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1086,15 +1090,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-xaxis" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> x<wbr>Axis</h3>
+					<a name="xaxis" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> x<wbr>Axis</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">x<wbr>Axis<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:372</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L373">Vector3.ts:373</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1109,15 +1114,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-yaxis" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> y<wbr>Axis</h3>
+					<a name="yaxis" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> y<wbr>Axis</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">y<wbr>Axis<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:382</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L383">Vector3.ts:383</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1132,15 +1138,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-zaxis" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> z<wbr>Axis</h3>
+					<a name="zaxis" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> z<wbr>Axis</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">z<wbr>Axis<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:392</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L393">Vector3.ts:393</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1155,15 +1162,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-zero" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> zero</h3>
+					<a name="zero" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> zero</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">zero<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Vector3.ts:362</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Vector3.ts#L363">Vector3.ts:363</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1197,9 +1205,6 @@
 					</li>
 					<li class=" tsd-kind-enum tsd-is-not-exported">
 						<a href="../enums/zone.html" class="tsd-kind-icon">Zone</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
 					</li>
 					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="circlegesture.html" class="tsd-kind-icon">Circle<wbr>Gesture</a>
@@ -1257,7 +1262,7 @@
 					<li class="current tsd-kind-class tsd-is-not-exported">
 						<a href="vector3.html" class="tsd-kind-icon">Vector3</a>
 						<ul>
-							<li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
 								<a href="vector3.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
@@ -1269,20 +1274,17 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="vector3.html#z" class="tsd-kind-icon">z</a>
 							</li>
-							<li class=" tsd-kind-get-accessor tsd-parent-kind-class tsd-is-not-exported">
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported">
 								<a href="vector3.html#pitch" class="tsd-kind-icon">pitch</a>
 							</li>
-							<li class=" tsd-kind-get-accessor tsd-parent-kind-class tsd-is-not-exported">
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported">
 								<a href="vector3.html#roll" class="tsd-kind-icon">roll</a>
 							</li>
-							<li class=" tsd-kind-get-accessor tsd-parent-kind-class tsd-is-not-exported">
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported">
 								<a href="vector3.html#yaw" class="tsd-kind-icon">yaw</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="vector3.html#angleto" class="tsd-kind-icon">angle<wbr>To</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="vector3.html#static-backward" class="tsd-kind-icon">backward</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="vector3.html#cross" class="tsd-kind-icon">cross</a>
@@ -1299,23 +1301,11 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="vector3.html#dot" class="tsd-kind-icon">dot</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="vector3.html#static-down" class="tsd-kind-icon">down</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="vector3.html#static-forward" class="tsd-kind-icon">forward</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="vector3.html#static-invalid" class="tsd-kind-icon">invalid</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="vector3.html#isequalto" class="tsd-kind-icon">is<wbr>Equal<wbr>To</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="vector3.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="vector3.html#static-left" class="tsd-kind-icon">left</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="vector3.html#magnitude" class="tsd-kind-icon">magnitude</a>
@@ -1347,31 +1337,49 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="vector3.html#plusassign" class="tsd-kind-icon">plus<wbr>Assign</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="vector3.html#static-right" class="tsd-kind-icon">right</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="vector3.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="vector3.html#static-up" class="tsd-kind-icon">up</a>
+								<a href="vector3.html#backward" class="tsd-kind-icon">backward</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="vector3.html#static-xaxis" class="tsd-kind-icon">x<wbr>Axis</a>
+								<a href="vector3.html#down" class="tsd-kind-icon">down</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="vector3.html#static-yaxis" class="tsd-kind-icon">y<wbr>Axis</a>
+								<a href="vector3.html#forward" class="tsd-kind-icon">forward</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="vector3.html#static-zaxis" class="tsd-kind-icon">z<wbr>Axis</a>
+								<a href="vector3.html#invalid" class="tsd-kind-icon">invalid</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="vector3.html#static-zero" class="tsd-kind-icon">zero</a>
+								<a href="vector3.html#left" class="tsd-kind-icon">left</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="vector3.html#right" class="tsd-kind-icon">right</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="vector3.html#up" class="tsd-kind-icon">up</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="vector3.html#xaxis" class="tsd-kind-icon">x<wbr>Axis</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="vector3.html#yaxis" class="tsd-kind-icon">y<wbr>Axis</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="vector3.html#zaxis" class="tsd-kind-icon">z<wbr>Axis</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="vector3.html#zero" class="tsd-kind-icon">zero</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -1382,50 +1390,56 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-container"><span class="tsd-kind-icon">Container, dynamic module</span></li>
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-construct-signature"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-call-signature"><span class="tsd-kind-icon">Function, call signature, accessor</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
 				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited member</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private member</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li>&nbsp;</li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static member</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>

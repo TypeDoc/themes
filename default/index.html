@@ -29,10 +29,16 @@
 					<div id="tsd-filter">
 						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
 						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-private" checked />
-							<label class="tsd-widget" for="tsd-filter-private">Private</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
@@ -59,7 +65,6 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<p><a href="https://github.com/logotype/LeapMotionTS"><img src="http://logotype.se/leapmotion/logo_ts.png" style="width:100%;height:auto;"></a></p>
 				<p>This is the TypeScript framework for working with Leap Motion.</p>
 				<p>Leap Motion is a motion-control software and hardware company developing the world&#39;s most powerful and sensitive 3D motion-control and motion-sensing technology.</p>
 				<p><a href="http://www.leapmotion.com">leapmotion.com</a></p>
@@ -69,96 +74,7 @@
 				<p>Clone the repo, <code>git clone git://github.com/logotype/LeapMotionTS.git</code>.</p>
 				<p>Import the library and create an instance of the Controller class. What you&#39;ll get from the <code>LEAPMOTION_FRAME</code> handler is a <code>Frame</code> instance,
 				with strongly typed properties such as <code>Hands</code>, <code>Pointables</code>, <code>Direction</code>, <code>Gestures</code> and more:</p>
-				<pre><code><span class="hljs-reserved">import</span> Leap = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../LeapMotionTS'</span>);
-<span class="hljs-reserved">var</span> <span class="hljs-attribute">controller</span>:Leap.Controller = <span class="hljs-keyword">new</span> Leap.Controller();
-controller.addEventListener<span class="hljs-function"><span class="hljs-params">(Leap.LeapEvent.LEAPMOTION_CONNECTED, (event:Leap.LeapEvent) =&gt; {
-    controller.enableGesture(Leap.Type.TYPE_CIRCLE, <span class="hljs-literal">true</span>);
-    controller.enableGesture(Leap.Type.TYPE_SWIPE, <span class="hljs-literal">true</span>);
-    controller.enableGesture(Leap.Type.TYPE_SCREEN_TAP, <span class="hljs-literal">true</span>);
-    controller.enableGesture(Leap.Type.TYPE_KEY_TAP, <span class="hljs-literal">true</span>);
-})</span>;
-<span class="hljs-title">controller</span>.<span class="hljs-title">addEventListener</span><span class="hljs-params">(Leap.LeapEvent.LEAPMOTION_FRAME, (event:Leap.LeapEvent) =&gt; {
-    <span class="hljs-reserved">var</span> frame:Leap.Frame = event.frame;
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Frame id:"</span> + frame.id + <span class="hljs-string">", timestamp:"</span> + frame.timestamp + <span class="hljs-string">", hands:"</span> + frame.hands.length + <span class="hljs-string">", fingers:"</span> + frame.fingers.length + <span class="hljs-string">", tools:"</span> + frame.tools.length + <span class="hljs-string">", gestures:"</span> + frame.gestures().length);
-
-    <span class="hljs-keyword">if</span> (frame.hands.length &gt; <span class="hljs-number">0</span>) {
-        <span class="hljs-regexp">//</span> Get the first hand
-        <span class="hljs-reserved">var</span> hand:Leap.Hand = frame.hands[<span class="hljs-number">0</span>];
-
-        <span class="hljs-regexp">//</span> Check <span class="hljs-keyword">if</span> the hand has any fingers
-        <span class="hljs-reserved">var</span> fingers:Leap.Finger[] = hand.fingers;
-        <span class="hljs-keyword">if</span> (fingers.length &gt; <span class="hljs-number">0</span>) {
-            <span class="hljs-regexp">//</span> Calculate the hand<span class="hljs-string">'s average finger tip position
-            var avgPos:Leap.Vector3 = Leap.Vector3.zero();
-            for (var i:number = 0; i &lt; fingers.length; i++)
-                avgPos = avgPos.plus((&lt;Leap.Finger&gt;fingers[i]).tipPosition);
-
-            avgPos = avgPos.divide(fingers.length);
-            console.log("Hand has " + fingers.length + " fingers, average finger tip position:" + avgPos);
-        }
-
-        // Get the hand'</span>s sphere radius <span class="hljs-keyword">and</span> palm position
-        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hand sphere radius:"</span> + hand.sphereRadius + <span class="hljs-string">" mm, palm position:"</span> + hand.palmPosition);
-
-        <span class="hljs-regexp">//</span> Get the hand<span class="hljs-string">'s normal vector and direction
-        var normal:Leap.Vector3 = hand.palmNormal;
-        var direction:Leap.Vector3 = hand.direction;
-
-        // Calculate the hand'</span>s pitch, roll, <span class="hljs-keyword">and</span> yaw angles
-        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hand pitch:"</span> + Leap.LeapUtil.toDegrees(direction.pitch) + <span class="hljs-string">" degrees, "</span> + <span class="hljs-string">"roll:"</span> + Leap.LeapUtil.toDegrees(normal.roll) + <span class="hljs-string">" degrees, "</span> + <span class="hljs-string">"yaw:"</span> + Leap.LeapUtil.toDegrees(direction.yaw) + <span class="hljs-string">" degrees\n"</span>);
-    }
-
-    <span class="hljs-reserved">var</span> gestures:Leap.Gesture[] = frame.gestures();
-    <span class="hljs-keyword">for</span> (<span class="hljs-reserved">var</span> i:number = <span class="hljs-number">0</span>; i &lt; gestures.length; i++) {
-        <span class="hljs-reserved">var</span> gesture:Leap.Gesture = gestures[i];
-
-        <span class="hljs-keyword">switch</span> (gesture.type) {
-            <span class="hljs-reserved">case</span> Leap.Type.TYPE_CIRCLE:
-                <span class="hljs-reserved">var</span> circle:Leap.CircleGesture = &lt;Leap.CircleGesture&gt;gesture;
-
-                <span class="hljs-regexp">//</span> Calculate clock direction using the angle between circle normal <span class="hljs-keyword">and</span> pointable
-                <span class="hljs-reserved">var</span> clockwiseness:string;
-                <span class="hljs-keyword">if</span> (circle.pointable.direction.angleTo(circle.normal) &lt;= Math.PI / <span class="hljs-number">4</span>) {
-                    <span class="hljs-regexp">//</span> Clockwise <span class="hljs-keyword">if</span> angle <span class="hljs-keyword">is</span> less than <span class="hljs-number">90</span> degrees
-                    clockwiseness = <span class="hljs-string">"clockwise"</span>;
-                } <span class="hljs-keyword">else</span> {
-                    clockwiseness = <span class="hljs-string">"counterclockwise"</span>;
-                }
-
-                <span class="hljs-regexp">//</span> Calculate angle swept since last frame
-                <span class="hljs-reserved">var</span> sweptAngle:number = <span class="hljs-number">0</span>;
-                <span class="hljs-keyword">if</span> (circle.state != Leap.State.STATE_START) {
-                    <span class="hljs-reserved">var</span> previousGesture:Leap.Gesture = controller.frame(<span class="hljs-number">1</span>).gesture(circle.id);
-                    <span class="hljs-keyword">if</span> (previousGesture.isValid()) {
-                        <span class="hljs-reserved">var</span> previousUpdate:Leap.CircleGesture = (&lt;Leap.CircleGesture&gt;controller.frame(<span class="hljs-number">1</span>).gesture(circle.id));
-                        sweptAngle = (circle.progress - previousUpdate.progress) * <span class="hljs-number">2</span> * Math.PI;
-                    }
-                }
-                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Circle id:"</span> + circle.id + <span class="hljs-string">", "</span> + circle.state + <span class="hljs-string">", progress:"</span> + circle.progress + <span class="hljs-string">", radius:"</span> + circle.radius + <span class="hljs-string">", angle:"</span> + Leap.LeapUtil.toDegrees(sweptAngle) + <span class="hljs-string">", "</span> + clockwiseness);
-                <span class="hljs-keyword">break</span>;
-            <span class="hljs-reserved">case</span> Leap.Type.TYPE_SWIPE:
-                <span class="hljs-reserved">var</span> swipe:Leap.SwipeGesture = &lt;Leap.SwipeGesture&gt;gesture;
-                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Swipe id:"</span> + swipe.id + <span class="hljs-string">", "</span> + swipe.state + <span class="hljs-string">", position:"</span> + swipe.position + <span class="hljs-string">", direction:"</span> + swipe.direction + <span class="hljs-string">", speed:"</span> + swipe.speed);
-                <span class="hljs-keyword">break</span>;
-            <span class="hljs-reserved">case</span> Leap.Type.TYPE_SCREEN_TAP:
-                <span class="hljs-reserved">var</span> screenTap:Leap.ScreenTapGesture = &lt;Leap.ScreenTapGesture&gt;gesture;
-                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Screen Tap id:"</span> + screenTap.id + <span class="hljs-string">", "</span> + screenTap.state + <span class="hljs-string">", position:"</span> + screenTap.position + <span class="hljs-string">", direction:"</span> + screenTap.direction);
-                <span class="hljs-keyword">break</span>;
-            <span class="hljs-reserved">case</span> Leap.Type.TYPE_KEY_TAP:
-                <span class="hljs-reserved">var</span> keyTap:Leap.KeyTapGesture = &lt;Leap.KeyTapGesture&gt;gesture;
-                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Key Tap id:"</span> + keyTap.id + <span class="hljs-string">", "</span> + keyTap.state + <span class="hljs-string">", position:"</span> + keyTap.position + <span class="hljs-string">", direction:"</span> + keyTap.direction);
-                <span class="hljs-keyword">break</span>;
-        }
-    }
-})</span>;</span>
-</code></pre><p>Example output:</p>
-				<pre><code><span class="hljs-tag">Frame</span> <span class="hljs-tag">id</span><span class="hljs-pseudo">:1125277</span>, <span class="hljs-tag">timestamp</span><span class="hljs-pseudo">:14800590398</span>, <span class="hljs-tag">hands</span><span class="hljs-pseudo">:1</span>, <span class="hljs-tag">fingers</span><span class="hljs-pseudo">:5</span>, <span class="hljs-tag">tools</span><span class="hljs-pseudo">:0</span>, <span class="hljs-tag">gestures</span><span class="hljs-pseudo">:5</span>
-<span class="hljs-tag">Hand</span> <span class="hljs-tag">has</span> 5 <span class="hljs-tag">fingers</span>, <span class="hljs-tag">average</span> <span class="hljs-tag">finger</span> <span class="hljs-tag">tip</span> <span class="hljs-tag">position</span>:<span class="hljs-attr_selector">[Vector3 x:4.767591999999996 y:129.5072 z:-28.39772]</span>
-<span class="hljs-tag">Hand</span> <span class="hljs-tag">sphere</span> <span class="hljs-tag">radius</span><span class="hljs-pseudo">:136</span><span class="hljs-class">.979</span> <span class="hljs-tag">mm</span>, <span class="hljs-tag">palm</span> <span class="hljs-tag">position</span>:<span class="hljs-attr_selector">[Vector3 x:19.067 y:127.976 z:42.0272]</span>
-<span class="hljs-tag">Hand</span> <span class="hljs-tag">pitch</span><span class="hljs-pseudo">:6</span><span class="hljs-class">.500235603666339</span> <span class="hljs-tag">degrees</span>, <span class="hljs-tag">roll</span><span class="hljs-pseudo">:6</span><span class="hljs-class">.0708401144239925</span> <span class="hljs-tag">degrees</span>, <span class="hljs-tag">yaw</span><span class="hljs-pseudo">:-9</span><span class="hljs-class">.621146044782972</span> <span class="hljs-tag">degrees</span>
-<span class="hljs-tag">Circle</span> <span class="hljs-tag">id</span><span class="hljs-pseudo">:27</span>, 2, <span class="hljs-tag">progress</span><span class="hljs-pseudo">:3</span><span class="hljs-class">.92605</span>, <span class="hljs-tag">radius</span><span class="hljs-pseudo">:43</span><span class="hljs-class">.2705</span>, <span class="hljs-tag">angle</span><span class="hljs-pseudo">:13</span><span class="hljs-class">.417199999999967</span>, <span class="hljs-tag">counterclockwise</span>
-<span class="hljs-tag">Circle</span> <span class="hljs-tag">id</span><span class="hljs-pseudo">:25</span>, 2, <span class="hljs-tag">progress</span><span class="hljs-pseudo">:3</span><span class="hljs-class">.90497</span>, <span class="hljs-tag">radius</span><span class="hljs-pseudo">:40</span><span class="hljs-class">.3004</span>, <span class="hljs-tag">angle</span><span class="hljs-pseudo">:13</span><span class="hljs-class">.489199999999961</span>, <span class="hljs-tag">counterclockwise</span>
-</code></pre><p>Optionally, you can simply call <code>controller.frame()</code> e.g. in your main loop, or implement the <code>Listener</code> interface for callbacks.</p>
+				<p>Optionally, you can simply call <code>controller.frame()</code> e.g. in your main loop, or implement the <code>Listener</code> interface for callbacks.</p>
 				<h2 id="authors">Authors</h2>
 				<p><strong>Victor Norgren</strong></p>
 				<ul>
@@ -204,9 +120,6 @@ controller.addEventListener<span class="hljs-function"><span class="hljs-params"
 					</li>
 					<li class=" tsd-kind-enum tsd-is-not-exported">
 						<a href="enums/zone.html" class="tsd-kind-icon">Zone</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="interfaces/listener.html" class="tsd-kind-icon">Listener</a>
 					</li>
 					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="classes/circlegesture.html" class="tsd-kind-icon">Circle<wbr>Gesture</a>
@@ -262,6 +175,9 @@ controller.addEventListener<span class="hljs-function"><span class="hljs-params"
 					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="classes/vector3.html" class="tsd-kind-icon">Vector3</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="interfaces/listener.html" class="tsd-kind-icon">Listener</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -272,50 +188,56 @@ controller.addEventListener<span class="hljs-function"><span class="hljs-params"
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-container"><span class="tsd-kind-icon">Container, dynamic module</span></li>
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-construct-signature"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-call-signature"><span class="tsd-kind-icon">Function, call signature, accessor</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
 				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited member</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private member</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li>&nbsp;</li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static member</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>

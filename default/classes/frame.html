@@ -29,10 +29,16 @@
 					<div id="tsd-filter">
 						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
 						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-private" checked />
-							<label class="tsd-widget" for="tsd-filter-private">Private</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
@@ -79,14 +85,22 @@
 					</dl>
 				</div>
 			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Frame</span>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Constructor methods</h3>
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported"><a href="frame.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported"><a href="frame.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -114,7 +128,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="frame.html#gesture" class="tsd-kind-icon">gesture</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="frame.html#gestures" class="tsd-kind-icon">gestures</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="frame.html#hand" class="tsd-kind-icon">hand</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="frame.html#static-invalid" class="tsd-kind-icon">invalid</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="frame.html#isequalto" class="tsd-kind-icon">is<wbr>Equal<wbr>To</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="frame.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="frame.html#pointable" class="tsd-kind-icon">pointable</a></li>
@@ -124,23 +137,25 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="frame.html#scalefactor" class="tsd-kind-icon">scale<wbr>Factor</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="frame.html#tool" class="tsd-kind-icon">tool</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="frame.html#translation" class="tsd-kind-icon">translation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="frame.html#invalid" class="tsd-kind-icon">invalid</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Constructor methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="constructor" class="anchor"></a>
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">constructor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Frame<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:126</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L118">Frame.ts:118</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -160,12 +175,12 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="_gestures" class="anchor"></a>
+					<a name="_gestures" class="tsd-anchor"></a>
 					<h3>_gestures</h3>
 					<div class="tsd-signature tsd-kind-icon">_gestures<span class="tsd-signature-symbol">:</span> <a href="gesture.html" class="tsd-signature-type">Gesture</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Frame.ts:63</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L64">Frame.ts:64</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -177,12 +192,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="controller" class="anchor"></a>
+					<a name="controller" class="tsd-anchor"></a>
 					<h3>controller</h3>
 					<div class="tsd-signature tsd-kind-icon">controller<span class="tsd-signature-symbol">:</span> <a href="controller.html" class="tsd-signature-type">Controller</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Frame.ts:117</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L118">Frame.ts:118</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -192,12 +207,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="currentframespersecond" class="anchor"></a>
+					<a name="currentframespersecond" class="tsd-anchor"></a>
 					<h3>current<wbr>Frames<wbr>Per<wbr>Second</h3>
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Frames<wbr>Per<wbr>Second<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Frame.ts:78</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L79">Frame.ts:79</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -211,12 +226,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="fingers" class="anchor"></a>
+					<a name="fingers" class="tsd-anchor"></a>
 					<h3>fingers</h3>
 					<div class="tsd-signature tsd-kind-icon">fingers<span class="tsd-signature-symbol">:</span> <a href="finger.html" class="tsd-signature-type">Finger</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Frame.ts:29</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L30">Frame.ts:30</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -227,12 +242,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="hands" class="anchor"></a>
+					<a name="hands" class="tsd-anchor"></a>
 					<h3>hands</h3>
 					<div class="tsd-signature tsd-kind-icon">hands<span class="tsd-signature-symbol">:</span> <a href="hand.html" class="tsd-signature-type">Hand</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Frame.ts:35</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L36">Frame.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -243,12 +258,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="id" class="anchor"></a>
+					<a name="id" class="tsd-anchor"></a>
 					<h3>id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Frame.ts:69</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L70">Frame.ts:70</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -259,12 +274,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="interactionbox" class="anchor"></a>
+					<a name="interactionbox" class="tsd-anchor"></a>
 					<h3>interaction<wbr>Box</h3>
 					<div class="tsd-signature tsd-kind-icon">interaction<wbr>Box<span class="tsd-signature-symbol">:</span> <a href="interactionbox.html" class="tsd-signature-type">InteractionBox</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Frame.ts:85</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L86">Frame.ts:86</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -280,12 +295,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="pointables" class="anchor"></a>
+					<a name="pointables" class="tsd-anchor"></a>
 					<h3>pointables</h3>
 					<div class="tsd-signature tsd-kind-icon">pointables<span class="tsd-signature-symbol">:</span> <a href="pointable.html" class="tsd-signature-type">Pointable</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Frame.ts:55</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L56">Frame.ts:56</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -310,12 +325,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="rotation" class="anchor"></a>
+					<a name="rotation" class="tsd-anchor"></a>
 					<h3>rotation</h3>
 					<div class="tsd-signature tsd-kind-icon">rotation<span class="tsd-signature-symbol">:</span> <a href="matrix.html" class="tsd-signature-type">Matrix</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Frame.ts:102</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L103">Frame.ts:103</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -325,12 +340,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="scalefactornumber" class="anchor"></a>
+					<a name="scalefactornumber" class="tsd-anchor"></a>
 					<h3>scale<wbr>Factor<wbr>Number</h3>
 					<div class="tsd-signature tsd-kind-icon">scale<wbr>Factor<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Frame.ts:107</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L108">Frame.ts:108</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -340,12 +355,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="timestamp" class="anchor"></a>
+					<a name="timestamp" class="tsd-anchor"></a>
 					<h3>timestamp</h3>
 					<div class="tsd-signature tsd-kind-icon">timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Frame.ts:90</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L91">Frame.ts:91</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -355,12 +370,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="tools" class="anchor"></a>
+					<a name="tools" class="tsd-anchor"></a>
 					<h3>tools</h3>
 					<div class="tsd-signature tsd-kind-icon">tools<span class="tsd-signature-symbol">:</span> <a href="tool.html" class="tsd-signature-type">Tool</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Frame.ts:97</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L98">Frame.ts:98</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -375,12 +390,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="translationvector" class="anchor"></a>
+					<a name="translationvector" class="tsd-anchor"></a>
 					<h3>translation<wbr>Vector</h3>
 					<div class="tsd-signature tsd-kind-icon">translation<wbr>Vector<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Frame.ts:112</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L113">Frame.ts:113</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -393,15 +408,16 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="finger" class="anchor"></a>
+					<a name="finger" class="tsd-anchor"></a>
 					<h3>finger</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">finger<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="finger.html" class="tsd-signature-type">Finger</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:188</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L189">Frame.ts:189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -429,9 +445,7 @@
 								<li>
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The ID value of a Finger object from a previous frame.</p>
-										</div>
+										<p>The ID value of a Finger object from a previous frame.</p>
 									</div>
 								</li>
 							</ul>
@@ -444,15 +458,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="gesture" class="anchor"></a>
+					<a name="gesture" class="tsd-anchor"></a>
 					<h3>gesture</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">gesture<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gesture.html" class="tsd-signature-type">Gesture</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:295</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L296">Frame.ts:296</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -470,9 +485,7 @@
 								<li>
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The ID of an Gesture object from a previous frame.</p>
-										</div>
+										<p>The ID of an Gesture object from a previous frame.</p>
 									</div>
 								</li>
 							</ul>
@@ -485,15 +498,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="gestures" class="anchor"></a>
+					<a name="gestures" class="tsd-anchor"></a>
 					<h3>gestures</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">gestures<span class="tsd-signature-symbol">(</span>sinceFrame<span class="tsd-signature-symbol">?: </span><a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol"> =&nbsp;</span>null<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gesture.html" class="tsd-signature-type">Gesture</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">gestures<span class="tsd-signature-symbol">(</span>sinceFrame<span class="tsd-signature-symbol">?: </span><a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gesture.html" class="tsd-signature-type">Gesture</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:324</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L325">Frame.ts:325</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -507,12 +521,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>sinceFrame?: <a href="frame.html" class="tsd-signature-type">Frame</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>An earlier Frame object. The starting frame must
-											still be in the frame history cache, which has a default length of 60 frames.</p>
-										</div>
+										<p>An earlier Frame object. The starting frame must
+										still be in the frame history cache, which has a default length of 60 frames.</p>
 									</div>
 								</li>
 							</ul>
@@ -524,15 +536,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="hand" class="anchor"></a>
+					<a name="hand" class="tsd-anchor"></a>
 					<h3>hand</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">hand<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hand.html" class="tsd-signature-type">Hand</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:150</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L151">Frame.ts:151</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -559,9 +572,7 @@
 								<li>
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The ID value of a Hand object from a previous frame.</p>
-										</div>
+										<p>The ID value of a Hand object from a previous frame.</p>
 									</div>
 								</li>
 							</ul>
@@ -573,43 +584,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-invalid" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> invalid</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">invalid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
-								<ul>
-									<li>Defined in Frame.ts:566</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns an invalid Frame object.</p>
-								</div>
-								<p>You can use the instance returned by this in comparisons
-									testing whether a given Frame instance is valid or invalid.
-								(You can also use the <code>Frame.isValid()</code> function.)</p>
-							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<a href="frame.html" class="tsd-signature-type">Frame</a>
-							</h4>
-							<p>The invalid Frame instance.</p>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="isequalto" class="anchor"></a>
+					<a name="isequalto" class="tsd-anchor"></a>
 					<h3>is<wbr>Equal<wbr>To</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">is<wbr>Equal<wbr>To<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:521</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L522">Frame.ts:522</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -625,9 +610,7 @@
 								<li>
 									<h5>other: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The Frame to compare with.</p>
-										</div>
+										<p>The Frame to compare with.</p>
 									</div>
 								</li>
 							</ul>
@@ -639,15 +622,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="isvalid" class="anchor"></a>
+					<a name="isvalid" class="tsd-anchor"></a>
 					<h3>is<wbr>Valid</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:548</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L549">Frame.ts:549</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -672,15 +656,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="pointable" class="anchor"></a>
+					<a name="pointable" class="tsd-anchor"></a>
 					<h3>pointable</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">pointable<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pointable.html" class="tsd-signature-type">Pointable</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:263</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L264">Frame.ts:264</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -703,9 +688,7 @@
 								<li>
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The ID value of a Pointable object from a previous frame.</p>
-										</div>
+										<p>The ID value of a Pointable object from a previous frame.</p>
 									</div>
 								</li>
 							</ul>
@@ -718,15 +701,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="rotationangle" class="anchor"></a>
+					<a name="rotationangle" class="tsd-anchor"></a>
 					<h3>rotation<wbr>Angle</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">rotation<wbr>Angle<span class="tsd-signature-symbol">(</span>sinceFrame<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a>, axis<span class="tsd-signature-symbol">?: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol"> =&nbsp;</span>null<span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">rotation<wbr>Angle<span class="tsd-signature-symbol">(</span>sinceFrame<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a>, axis<span class="tsd-signature-symbol">?: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:402</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L403">Frame.ts:403</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -747,17 +731,13 @@
 								<li>
 									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The starting frame for computing the relative rotation.</p>
-										</div>
+										<p>The starting frame for computing the relative rotation.</p>
 									</div>
 								</li>
 								<li>
-									<h5>axis?: <a href="vector3.html" class="tsd-signature-type">Vector3</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> axis: <a href="vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Optional. The axis to measure rotation around.</p>
-										</div>
+										<p>Optional. The axis to measure rotation around.</p>
 									</div>
 								</li>
 							</ul>
@@ -770,15 +750,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="rotationaxis" class="anchor"></a>
+					<a name="rotationaxis" class="tsd-anchor"></a>
 					<h3>rotation<wbr>Axis</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">rotation<wbr>Axis<span class="tsd-signature-symbol">(</span>sinceFrame<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:369</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L370">Frame.ts:370</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -799,9 +780,7 @@
 								<li>
 									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The starting frame for computing the relative rotation.</p>
-										</div>
+										<p>The starting frame for computing the relative rotation.</p>
 									</div>
 								</li>
 							</ul>
@@ -815,15 +794,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="rotationmatrix" class="anchor"></a>
+					<a name="rotationmatrix" class="tsd-anchor"></a>
 					<h3>rotation<wbr>Matrix</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">rotation<wbr>Matrix<span class="tsd-signature-symbol">(</span>sinceFrame<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="matrix.html" class="tsd-signature-type">Matrix</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:435</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L436">Frame.ts:436</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -849,15 +829,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="scalefactor" class="anchor"></a>
+					<a name="scalefactor" class="tsd-anchor"></a>
 					<h3>scale<wbr>Factor</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">scale<wbr>Factor<span class="tsd-signature-symbol">(</span>sinceFrame<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:468</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L469">Frame.ts:469</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -879,9 +860,7 @@
 								<li>
 									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The starting frame for computing the relative scaling.</p>
-										</div>
+										<p>The starting frame for computing the relative scaling.</p>
 									</div>
 								</li>
 							</ul>
@@ -895,15 +874,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="tool" class="anchor"></a>
+					<a name="tool" class="tsd-anchor"></a>
 					<h3>tool</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">tool<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="tool.html" class="tsd-signature-type">Tool</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:226</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L227">Frame.ts:227</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -931,9 +911,7 @@
 								<li>
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The ID value of a Tool object from a previous frame.</p>
-										</div>
+										<p>The ID value of a Tool object from a previous frame.</p>
 									</div>
 								</li>
 							</ul>
@@ -946,15 +924,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="translation" class="anchor"></a>
+					<a name="translation" class="tsd-anchor"></a>
 					<h3>translation</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">translation<span class="tsd-signature-symbol">(</span>sinceFrame<span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vector3.html" class="tsd-signature-type">Vector3</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Frame.ts:498</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L499">Frame.ts:499</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -974,9 +953,7 @@
 								<li>
 									<h5>sinceFrame: <a href="frame.html" class="tsd-signature-type">Frame</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The starting frame for computing the translation.</p>
-										</div>
+										<p>The starting frame for computing the translation.</p>
 									</div>
 								</li>
 							</ul>
@@ -986,6 +963,34 @@
 							<p>A Vector representing the heuristically determined change
 								in hand position between the current frame and that specified
 							in the sinceFrame parameter.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+					<a name="invalid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> invalid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">invalid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="frame.html" class="tsd-signature-type">Frame</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Frame.ts#L567">Frame.ts:567</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an invalid Frame object.</p>
+								</div>
+								<p>You can use the instance returned by this in comparisons
+									testing whether a given Frame instance is valid or invalid.
+								(You can also use the <code>Frame.isValid()</code> function.)</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns 
+								<a href="frame.html" class="tsd-signature-type">Frame</a>
+							</h4>
+							<p>The invalid Frame instance.</p>
 						</li>
 					</ul>
 				</section>
@@ -1010,9 +1015,6 @@
 					<li class=" tsd-kind-enum tsd-is-not-exported">
 						<a href="../enums/zone.html" class="tsd-kind-icon">Zone</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
-					</li>
 					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="circlegesture.html" class="tsd-kind-icon">Circle<wbr>Gesture</a>
 					</li>
@@ -1033,7 +1035,7 @@
 					<li class="current tsd-kind-class tsd-is-not-exported">
 						<a href="frame.html" class="tsd-kind-icon">Frame</a>
 						<ul>
-							<li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
 								<a href="frame.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
@@ -1087,9 +1089,6 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="frame.html#hand" class="tsd-kind-icon">hand</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="frame.html#static-invalid" class="tsd-kind-icon">invalid</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="frame.html#isequalto" class="tsd-kind-icon">is<wbr>Equal<wbr>To</a>
 							</li>
@@ -1116,6 +1115,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="frame.html#translation" class="tsd-kind-icon">translation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+								<a href="frame.html#invalid" class="tsd-kind-icon">invalid</a>
 							</li>
 						</ul>
 					</li>
@@ -1157,6 +1159,9 @@
 					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="vector3.html" class="tsd-kind-icon">Vector3</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -1167,50 +1172,56 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-container"><span class="tsd-kind-icon">Container, dynamic module</span></li>
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-construct-signature"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-call-signature"><span class="tsd-kind-icon">Function, call signature, accessor</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
 				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited member</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private member</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li>&nbsp;</li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static member</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>

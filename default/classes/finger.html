@@ -29,10 +29,16 @@
 					<div id="tsd-filter">
 						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
 						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-private" checked />
-							<label class="tsd-widget" for="tsd-filter-private">Private</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
@@ -100,9 +106,9 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Constructor methods</h3>
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="finger.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="finger.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited tsd-is-not-exported">
@@ -127,30 +133,31 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="finger.html#static-invalid" class="tsd-kind-icon">invalid</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="finger.html#isequalto" class="tsd-kind-icon">is<wbr>Equal<wbr>To</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="finger.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="finger.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static tsd-is-not-exported"><a href="finger.html#invalid" class="tsd-kind-icon">invalid</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Constructor methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-					<a name="constructor" class="anchor"></a>
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">constructor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="finger.html" class="tsd-signature-type">Finger</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Finger<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="finger.html" class="tsd-signature-type">Finger</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<p>Overwrites 
 									<a href="pointable.html">Pointable</a>.<a href="pointable.html#constructor">constructor</a>
 								</p>
 								<ul>
-									<li>Defined in Finger.ts:27</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Finger.ts#L20">Finger.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -170,7 +177,7 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="direction" class="anchor"></a>
+					<a name="direction" class="tsd-anchor"></a>
 					<h3>direction</h3>
 					<div class="tsd-signature tsd-kind-icon">direction<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
 					<aside class="tsd-sources">
@@ -178,7 +185,7 @@
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#direction">direction</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:99</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L100">Pointable.ts:100</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -190,7 +197,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="frame" class="anchor"></a>
+					<a name="frame" class="tsd-anchor"></a>
 					<h3>frame</h3>
 					<div class="tsd-signature tsd-kind-icon">frame<span class="tsd-signature-symbol">:</span> <a href="frame.html" class="tsd-signature-type">Frame</a></div>
 					<aside class="tsd-sources">
@@ -198,7 +205,7 @@
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#frame">frame</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:107</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L108">Pointable.ts:108</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -215,7 +222,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="hand" class="anchor"></a>
+					<a name="hand" class="tsd-anchor"></a>
 					<h3>hand</h3>
 					<div class="tsd-signature tsd-kind-icon">hand<span class="tsd-signature-symbol">:</span> <a href="hand.html" class="tsd-signature-type">Hand</a></div>
 					<aside class="tsd-sources">
@@ -223,7 +230,7 @@
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#hand">hand</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:115</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L116">Pointable.ts:116</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -240,7 +247,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="id" class="anchor"></a>
+					<a name="id" class="tsd-anchor"></a>
 					<h3>id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
@@ -248,7 +255,7 @@
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#id">id</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:129</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L130">Pointable.ts:130</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -265,7 +272,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="isfinger" class="anchor"></a>
+					<a name="isfinger" class="tsd-anchor"></a>
 					<h3>is<wbr>Finger</h3>
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Finger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
@@ -273,7 +280,7 @@
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#isfinger">isFinger</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:177</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L178">Pointable.ts:178</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -283,7 +290,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="istool" class="anchor"></a>
+					<a name="istool" class="tsd-anchor"></a>
 					<h3>is<wbr>Tool</h3>
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Tool<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
@@ -291,7 +298,7 @@
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#istool">isTool</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:182</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L183">Pointable.ts:183</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -301,7 +308,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="length" class="anchor"></a>
+					<a name="length" class="tsd-anchor"></a>
 					<h3>length</h3>
 					<div class="tsd-signature tsd-kind-icon">length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
@@ -309,7 +316,7 @@
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#length">length</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:139</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L140">Pointable.ts:140</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -322,7 +329,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="stabilizedtipposition" class="anchor"></a>
+					<a name="stabilizedtipposition" class="tsd-anchor"></a>
 					<h3>stabilized<wbr>Tip<wbr>Position</h3>
 					<div class="tsd-signature tsd-kind-icon">stabilized<wbr>Tip<wbr>Position<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
 					<aside class="tsd-sources">
@@ -330,7 +337,7 @@
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#stabilizedtipposition">stabilizedTipPosition</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:161</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L162">Pointable.ts:162</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -342,7 +349,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="timevisible" class="anchor"></a>
+					<a name="timevisible" class="tsd-anchor"></a>
 					<h3>time<wbr>Visible</h3>
 					<div class="tsd-signature tsd-kind-icon">time<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
@@ -350,7 +357,7 @@
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#timevisible">timeVisible</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:167</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L168">Pointable.ts:168</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -361,7 +368,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="tipposition" class="anchor"></a>
+					<a name="tipposition" class="tsd-anchor"></a>
 					<h3>tip<wbr>Position</h3>
 					<div class="tsd-signature tsd-kind-icon">tip<wbr>Position<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
 					<aside class="tsd-sources">
@@ -369,7 +376,7 @@
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#tipposition">tipPosition</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:154</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L155">Pointable.ts:155</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -379,7 +386,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="tipvelocity" class="anchor"></a>
+					<a name="tipvelocity" class="tsd-anchor"></a>
 					<h3>tip<wbr>Velocity</h3>
 					<div class="tsd-signature tsd-kind-icon">tip<wbr>Velocity<span class="tsd-signature-symbol">:</span> <a href="vector3.html" class="tsd-signature-type">Vector3</a></div>
 					<aside class="tsd-sources">
@@ -387,7 +394,7 @@
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#tipvelocity">tipVelocity</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:172</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L173">Pointable.ts:173</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -397,7 +404,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="touchdistance" class="anchor"></a>
+					<a name="touchdistance" class="tsd-anchor"></a>
 					<h3>touch<wbr>Distance</h3>
 					<div class="tsd-signature tsd-kind-icon">touch<wbr>Distance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
@@ -405,7 +412,7 @@
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#touchdistance">touchDistance</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:92</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L93">Pointable.ts:93</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -427,7 +434,7 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="touchzone" class="anchor"></a>
+					<a name="touchzone" class="tsd-anchor"></a>
 					<h3>touch<wbr>Zone</h3>
 					<div class="tsd-signature tsd-kind-icon">touch<wbr>Zone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
@@ -435,7 +442,7 @@
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#touchzone">touchZone</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:72</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L73">Pointable.ts:73</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -459,7 +466,7 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="width" class="anchor"></a>
+					<a name="width" class="tsd-anchor"></a>
 					<h3>width</h3>
 					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
@@ -467,7 +474,7 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 							<a href="pointable.html">Pointable</a>.<a href="pointable.html#width">width</a>
 						</p>
 						<ul>
-							<li>Defined in Pointable.ts:149</li>
+							<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L150">Pointable.ts:150</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -482,47 +489,20 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="static-invalid" class="anchor"></a>
-					<h3><span class="tsd-flag ts-flagstatic">static</span> invalid</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">invalid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="finger.html" class="tsd-signature-type">Finger</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
-								<ul>
-									<li>Defined in Finger.ts:45</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns an invalid Finger object.</p>
-								</div>
-								<p>You can use the instance returned by this function in
-									comparisons testing whether a given Finger instance
-									is valid or invalid.
-								(You can also use the <code>Finger.isValid()</code> function.)</p>
-							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<a href="finger.html" class="tsd-signature-type">Finger</a>
-							</h4>
-							<p>The invalid Finger instance.</p>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="isequalto" class="anchor"></a>
+					<a name="isequalto" class="tsd-anchor"></a>
 					<h3>is<wbr>Equal<wbr>To</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">is<wbr>Equal<wbr>To<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="pointable.html" class="tsd-signature-type">Pointable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<p>Inherited from 
 									<a href="pointable.html">Pointable</a>.<a href="pointable.html#isequalto">isEqualTo</a>
 								</p>
 								<ul>
-									<li>Defined in Pointable.ts:216</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L217">Pointable.ts:217</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -538,9 +518,7 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 								<li>
 									<h5>other: <a href="pointable.html" class="tsd-signature-type">Pointable</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The Pointable to compare with.</p>
-										</div>
+										<p>The Pointable to compare with.</p>
 									</div>
 								</li>
 							</ul>
@@ -552,18 +530,19 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="isvalid" class="anchor"></a>
+					<a name="isvalid" class="tsd-anchor"></a>
 					<h3>is<wbr>Valid</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<p>Inherited from 
 									<a href="pointable.html">Pointable</a>.<a href="pointable.html#isvalid">isValid</a>
 								</p>
 								<ul>
-									<li>Defined in Pointable.ts:195</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L196">Pointable.ts:196</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -579,18 +558,19 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="tostring" class="anchor"></a>
+					<a name="tostring" class="tsd-anchor"></a>
 					<h3>to<wbr>String</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
-						<li class="tsd-description"><aside class="tsd-sources">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
 								<p>Inherited from 
 									<a href="pointable.html">Pointable</a>.<a href="pointable.html#tostring">toString</a>
 								</p>
 								<ul>
-									<li>Defined in Pointable.ts:270</li>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Pointable.ts#L271">Pointable.ts:271</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -601,6 +581,38 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 							<h4 class="tsd-returns-title">Returns 
 								<span class="tsd-signature-type">string</span>
 							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static tsd-is-not-exported">
+					<a name="invalid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> invalid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">invalid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="finger.html" class="tsd-signature-type">Finger</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites 
+									<a href="pointable.html">Pointable</a>.<a href="pointable.html#invalid">invalid</a>
+								</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeDoc/themes/blob/master/src/default/Finger.ts#L46">Finger.ts:46</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an invalid Finger object.</p>
+								</div>
+								<p>You can use the instance returned by this function in
+									comparisons testing whether a given Finger instance
+									is valid or invalid.
+								(You can also use the <code>Finger.isValid()</code> function.)</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns 
+								<a href="finger.html" class="tsd-signature-type">Finger</a>
+							</h4>
+							<p>The invalid Finger instance.</p>
 						</li>
 					</ul>
 				</section>
@@ -625,9 +637,6 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 					<li class=" tsd-kind-enum tsd-is-not-exported">
 						<a href="../enums/zone.html" class="tsd-kind-icon">Zone</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
-					</li>
 					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="circlegesture.html" class="tsd-kind-icon">Circle<wbr>Gesture</a>
 					</li>
@@ -645,7 +654,7 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 					<li class="current tsd-kind-class tsd-is-not-exported">
 						<a href="finger.html" class="tsd-kind-icon">Finger</a>
 						<ul>
-							<li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 								<a href="finger.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
@@ -690,9 +699,6 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="finger.html#width" class="tsd-kind-icon">width</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="finger.html#static-invalid" class="tsd-kind-icon">invalid</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="finger.html#isequalto" class="tsd-kind-icon">is<wbr>Equal<wbr>To</a>
 							</li>
@@ -701,6 +707,9 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="finger.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static tsd-is-not-exported">
+								<a href="finger.html#invalid" class="tsd-kind-icon">invalid</a>
 							</li>
 						</ul>
 					</li>
@@ -745,6 +754,9 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="vector3.html" class="tsd-kind-icon">Vector3</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -755,50 +767,56 @@ Zone.TOUCHING – The Pointable has penetrated the touch plane.</code></p>
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-container"><span class="tsd-kind-icon">Container, dynamic module</span></li>
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-construct-signature"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-call-signature"><span class="tsd-kind-icon">Function, call signature, accessor</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
 				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited member</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private member</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li>&nbsp;</li>
-				<li>&nbsp;</li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static member</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>
